@@ -567,14 +567,18 @@ code {
 }
 
 .btn--primary {
-  background: linear-gradient(180deg, #6aa2ff 0%, var(--blue) 100%);
-  border-color: var(--blue-line);
-  color: #0a1020;
+  background: var(--amber);
+  border-color: var(--amber);
+  color: #080c11;
+  font-weight: 700;
+  box-shadow: 0 4px 18px rgba(242, 166, 59, 0.32);
 }
 
 .btn--primary:hover {
-  background: linear-gradient(180deg, #7bb0ff 0%, #5a95ff 100%);
-  border-color: rgba(122, 176, 255, 0.6);
+  background: #ffb852;
+  border-color: #ffb852;
+  box-shadow: 0 6px 24px rgba(242, 166, 59, 0.45);
+  transform: translateY(-2px);
 }
 
 .btn--ghost {
