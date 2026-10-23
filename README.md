@@ -30,7 +30,8 @@ necesitan un origen HTTP para comportarse igual que en producción.
 
 ## Despliegue
 
-GitHub Pages sirve la rama `main` desde la raíz. Para publicar cambios:
+El sitio se publica con **GitHub Actions** (`.github/workflows/deploy.yml`) en cada push a
+`main`. No requiere paso de compilación: se empaqueta la raíz del repositorio.
 
 ```bash
 git add -A
@@ -38,7 +39,8 @@ git commit -m "feat: descripción del cambio"
 git push origin main
 ```
 
-La publicación tarda alrededor de un minuto. Verificar en **Settings → Pages**.
+La publicación tarda alrededor de un minuto. Estado en la pestaña **Actions** del repositorio;
+la URL pública es https://acamilox.github.io/.
 
 ## Sistema de diseño
 

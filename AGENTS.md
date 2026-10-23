@@ -43,5 +43,5 @@ assets/Andres-Camacho-CV.pdf
 
 ## Despliegue
 
-Rama `main` → GitHub Pages (raíz del repositorio). Commit convencional en español o inglés,
-imperativo y corto.
+Rama `main` → GitHub Actions → GitHub Pages (workflow `deploy.yml`). Commit convencional en
+español o inglés, imperativo y corto.
