@@ -113,14 +113,16 @@
 
     <!-- ══════════ HERO ══════════ -->
     <section class="hero" id="perfil" aria-labelledby="heroTitle">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/hero/backend-logos.svg" alt="" loading="lazy">
+      </div>
       <div class="wrap hero__grid">
         <div class="hero__intro">
-          <p class="eyebrow">// Ingeniero de Sistemas · Backend</p>
-          <h1 id="heroTitle">Construyo APIs que <em>aguantan producción</em>.</h1>
+          <p class="eyebrow">// Junior Backend Developer</p>
+          <h1 id="heroTitle">Andrés Camilo Camacho Labrador</h1>
+          <p class="hero__subtitle">Junior Backend Developer · Bogotá, Colombia</p>
           <p class="hero__lead">
-            Ingeniero de Sistemas en Bogotá. Diseño y desarrollo servicios con
-            <strong>Python, FastAPI y PostgreSQL</strong>. Antes resolvía las fallas desde la mesa de
-            ayuda; ahora las prevengo desde el código.
+            Ingeniero de sistemas apasionado por el crecimiento constante y aplicabilidad de tecnologías TI impulsadas por el desarrollo hacia el backend.
           </p>
 
           <div class="hero__actions">
@@ -141,39 +143,23 @@
           </dl>
         </div>
 
-        <div class="console" aria-label="Consola con información del perfil">
-          <div class="console__bar console__bar--stack">
-            <span class="console__dots" aria-hidden="true"><i></i><i></i><i></i></span>
-            <div class="console__stack">
-              <span class="console__stack-item"><img src="assets/stack/python.svg" alt="Python" loading="lazy"></span>
-              <span class="console__stack-item"><img src="assets/stack/fastapi.svg" alt="FastAPI" loading="lazy"></span>
-              <span class="console__stack-item"><img src="assets/stack/postgresql.svg" alt="PostgreSQL" loading="lazy"></span>
-              <span class="console__stack-item"><img src="assets/stack/sqlite.svg" alt="SQLite" loading="lazy"></span>
-              <span class="console__stack-item"><img src="assets/stack/docker.svg" alt="Docker" loading="lazy"></span>
-              <span class="console__stack-item"><img src="assets/stack/git.svg" alt="Git" loading="lazy"></span>
-              <span class="console__stack-item"><img src="assets/stack/github.svg" alt="GitHub" loading="lazy"></span>
-              <span class="console__stack-item"><img src="assets/stack/azure.svg" alt="Azure" loading="lazy"></span>
+        <div class="hero__panel" aria-label="Perfil profesional">
+          <div class="hero__panel-card">
+            <p class="hero__panel-title">Perfil</p>
+            <ul class="hero__panel-list">
+              <li><span>Nombre</span><strong>Andrés Camilo Camacho Labrador</strong></li>
+              <li><span>Rol</span><strong>Junior Backend Developer</strong></li>
+              <li><span>Ubicación</span><strong>Bogotá, Colombia</strong></li>
+              <li><span>Enfoque</span><strong>Python · FastAPI · PostgreSQL</strong></li>
+              <li><span>Idiomas</span><strong>Español nativo · Inglés B2</strong></li>
+              <li><span>Disponibilidad</span><strong>Inmediata</strong></li>
+            </ul>
+            <div class="hero__panel-footer">
+              <span>Contacto</span>
+              <a href="mailto:acamicamacho@gmail.com">acamicamacho@gmail.com</a>
+              <a href="https://github.com/acamilox" target="_blank" rel="noopener noreferrer">@acamilox</a>
             </div>
           </div>
-
-          <div class="console__tabs" role="tablist" aria-label="Endpoints del perfil">
-            <button role="tab" id="tab-perfil" aria-controls="consolePanel" aria-selected="true" data-endpoint="perfil" tabindex="0">GET /perfil</button>
-            <button role="tab" id="tab-stack" aria-controls="consolePanel" aria-selected="false" data-endpoint="stack" tabindex="-1">GET /stack</button>
-            <button role="tab" id="tab-estado" aria-controls="consolePanel" aria-selected="false" data-endpoint="estado" tabindex="-1">GET /estado</button>
-          </div>
-
-          <div class="console__status">
-            <span class="console__code">200 OK</span>
-            <span aria-hidden="true">·</span>
-            <span id="consoleTime">14 ms</span>
-            <span aria-hidden="true">·</span>
-            <span>application/json</span>
-          </div>
-
-          <div role="tabpanel" id="consolePanel" aria-labelledby="tab-perfil" tabindex="0">
-            <pre class="console__body"><code id="consoleCode"></code></pre>
-          </div>
-          <noscript><p class="console__noscript">Active JavaScript para ver la consola. Toda la información también está en el texto de la página.</p></noscript>
         </div>
       </div>
     </section>
