@@ -14,6 +14,7 @@ Sitio estático en HTML, CSS y JavaScript, sin frameworks ni paso de compilació
 │   ├── css/styles.css          # Sistema de diseño y estilos
 │   ├── js/main.js              # Consola, navegación, reloj, acordeón y copiado
 │   ├── hero-backend.svg        # Banner del hero (SVG: BD, servidores, API)
+│   ├── hero-photo.webp         # Retrato duotono usado en la franja del hero
 │   ├── certs/                  # PDFs de certificados
 │   ├── projects/               # Capturas de los proyectos
 │   ├── profile.jpg             # Foto de la marca en el nav
