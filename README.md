@@ -12,7 +12,11 @@ Sitio estático en HTML, CSS y JavaScript, sin frameworks ni paso de compilació
 ├── index.html                  # Toda la página
 ├── assets/
 │   ├── css/styles.css          # Sistema de diseño y estilos
-│   ├── js/main.js              # Consola, navegación, reloj y copiado
+│   ├── js/main.js              # Consola, navegación, reloj, acordeón y copiado
+│   ├── hero-backend.svg        # Banner del hero (SVG: BD, servidores, API)
+│   ├── certs/                  # PDFs de certificados
+│   ├── projects/               # Capturas de los proyectos
+│   ├── profile.jpg             # Foto de la marca en el nav
 │   ├── favicon.svg
 │   ├── og.png                  # Imagen para compartir en redes (1200×630)
 │   └── Andres-Camacho-CV.pdf   # CV descargable
