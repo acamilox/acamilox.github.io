@@ -49,11 +49,24 @@ assets/Andres-Camacho-CV.pdf
 3. Recorrido con teclado: enlace de salto, navegación, pestañas de la consola, botones.
 4. Los enlaces externos abren en pestaña nueva con `rel="noopener noreferrer"`.
 
-## Despliegue
+## Despliegue y Commits
 
-Rama `main` → GitHub Actions → GitHub Pages (workflow `deploy.yml`). Commit convencional en
-español o inglés, imperativo y corto.
+Rama `main` → GitHub Actions → GitHub Pages (workflow `deploy.yml`).
 
+### Convención de Commits (Conventional Commits)
+Usar siempre el formato estándar en minúsculas, imperativo y conciso:
+- `feat:` nuevas secciones, componentes o elementos visuales visibles.
+- `fix:` corrección de bugs, rutas rotas, iconos vacíos o estilos defectuosos.
+- `docs:` cambios en `README.md`, `AGENTS.md` o textos descriptivos del repositorio.
+- `style:` cambios estéticos, maquetación, espaciados o CSS sin alterar funcionalidad.
+- `refactor:` reorganización o simplificación de código/HTML sin cambio visual.
+- `perf:` optimización de imágenes, rendimiento o tiempos de carga.
+- `chore:` actualización de assets, dependencias o tareas de mantenimiento.
+
+### Regla de ejecución
+Proceder directamente con la edición, commit y push a `main` cuando el usuario solicite cambios en este proyecto, sin requerir confirmaciones intermedias.
+
+### Cache-busting
 GitHub Pages cachea los assets con la misma URL. Cada vez que se modifique `styles.css` o
 `main.js`, subir el sufijo de versión en `index.html`:
 

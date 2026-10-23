@@ -401,6 +401,7 @@ code {
   padding-block: 0 clamp(48px, 8vh, 104px);
   scroll-margin-top: 24px;
   overflow: hidden;
+  border-bottom: 1px solid var(--line-soft);
 }
 
 .hero::before {
