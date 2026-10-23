@@ -67,7 +67,7 @@
   <aside class="rail" id="rail" data-open="false">
     <div class="rail__bar">
       <a class="brand" href="#perfil" aria-label="Andrés Camacho — inicio">
-        <span class="brand__mark" aria-hidden="true">AC</span>
+        <span class="brand__mark" aria-hidden="true"><img src="assets/profile.jpg" alt="Foto de Andrés Camilo Camacho Labrador"></span>
         <span class="brand__text">
           <strong>Andrés Camacho</strong>
           <span>Backend Developer</span>
@@ -142,9 +142,18 @@
         </div>
 
         <div class="console" aria-label="Consola con información del perfil">
-          <div class="console__bar">
+          <div class="console__bar console__bar--stack">
             <span class="console__dots" aria-hidden="true"><i></i><i></i><i></i></span>
-            <span class="console__host">acamilox.dev/api</span>
+            <div class="console__stack">
+              <span class="console__stack-item"><img src="assets/stack/python.svg" alt="Python" loading="lazy"></span>
+              <span class="console__stack-item"><img src="assets/stack/fastapi.svg" alt="FastAPI" loading="lazy"></span>
+              <span class="console__stack-item"><img src="assets/stack/postgresql.svg" alt="PostgreSQL" loading="lazy"></span>
+              <span class="console__stack-item"><img src="assets/stack/sqlite.svg" alt="SQLite" loading="lazy"></span>
+              <span class="console__stack-item"><img src="assets/stack/docker.svg" alt="Docker" loading="lazy"></span>
+              <span class="console__stack-item"><img src="assets/stack/git.svg" alt="Git" loading="lazy"></span>
+              <span class="console__stack-item"><img src="assets/stack/github.svg" alt="GitHub" loading="lazy"></span>
+              <span class="console__stack-item"><img src="assets/stack/azure.svg" alt="Azure" loading="lazy"></span>
+            </div>
           </div>
 
           <div class="console__tabs" role="tablist" aria-label="Endpoints del perfil">
@@ -251,11 +260,14 @@
         <header class="section__head">
           <p class="eyebrow">// 03 — Código</p>
           <h2 id="projTitle">Proyectos</h2>
-          <p class="section__lead">Cuatro proyectos construidos de principio a fin: modelo de datos, validación, endpoints e interfaz.</p>
+          <p class="section__lead">Tres APIs REST construidas de principio a fin: modelo de datos, validación, endpoints y documentación.</p>
         </header>
 
         <div class="projects">
           <article class="project">
+            <figure class="project__media">
+              <img src="assets/projects/task-manager-api.png" alt="Captura de Swagger UI de Task Manager API mostrando los endpoints CRUD de tareas" loading="lazy">
+            </figure>
             <div class="project__top">
               <h3>Task Manager API</h3>
               <span class="project__badge">CRUD</span>
@@ -270,6 +282,9 @@
           </article>
 
           <article class="project">
+            <figure class="project__media">
+              <img src="assets/projects/auth-jwt-api.png" alt="Captura de Swagger UI de API de Autenticación con JWT mostrando endpoints de registro, login y usuarios" loading="lazy">
+            </figure>
             <div class="project__top">
               <h3>API de Autenticación con JWT</h3>
               <span class="project__badge">Auth</span>
@@ -284,6 +299,9 @@
           </article>
 
           <article class="project">
+            <figure class="project__media">
+              <img src="assets/projects/url-shortener-api.png" alt="Captura de Swagger UI de URL Shortener API mostrando endpoints para acortar y redirigir URLs" loading="lazy">
+            </figure>
             <div class="project__top">
               <h3>URL Shortener API</h3>
               <span class="project__badge">Service</span>
@@ -297,18 +315,15 @@
             </a>
           </article>
 
-          <article class="project">
-            <div class="project__top">
-              <h3>Dashboard UCI Adultos</h3>
-              <span class="project__badge">Data</span>
+          <article class="project project--cta">
+            <div class="project__cta-inner">
+              <h3>Más proyectos en GitHub</h3>
+              <p>Explora más APIs, scripts y experimentos en mi perfil.</p>
+              <a class="btn btn--primary" href="https://github.com/acamilox?tab=repositories" target="_blank" rel="noopener noreferrer">
+                Ver todos los repositorios
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
             </div>
-            <p class="project__endpoint"><span>dash</span>.run_server() <b>→</b> :8050</p>
-            <p class="project__desc">Tablero en Dash y Plotly para los indicadores de una UCI: ocupación, mortalidad, estancia, infecciones asociadas a la atención y eventos adversos. Cuatro módulos, filtros por mes y exportación a Excel y CSV.</p>
-            <ul class="tags"><li>Python</li><li>Dash</li><li>Plotly</li><li>pandas</li></ul>
-            <a class="project__link" href="https://github.com/acamilox/Mis-Proyectos-Python/tree/main/Dashboard-UCI-Adultos-2025" target="_blank" rel="noopener noreferrer">
-              Ver repositorio
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
-            </a>
           </article>
         </div>
 
@@ -382,26 +397,81 @@
         </div>
 
         <ul class="certs">
-          <li>
-            <span class="certs__name">Google AI Essentials</span>
-            <span class="certs__org">Google · Coursera</span>
-            <a class="certs__verify" href="https://coursera.org/verify/specialization/PSSA1HXF22SE" target="_blank" rel="noopener noreferrer">Verificar</a>
+          <li class="certs__item">
+            <div class="certs__info">
+              <span class="certs__name">Google AI Essentials</span>
+              <span class="certs__org">Google · Coursera · Julio 2026</span>
+            </div>
+            <div class="certs__actions">
+              <a class="certs__link" href="https://www.credly.com/go/vP3Am1Fq" target="_blank" rel="noopener noreferrer">Verificar</a>
+              <button class="certs__toggle" type="button" data-cert-toggle aria-expanded="false">Ver certificado</button>
+            </div>
+            <div class="certs__panel" data-cert-panel hidden>
+              <iframe src="assets/certs/google-ai-essentials.pdf#view=FitH" title="Certificado Google AI Essentials" loading="lazy"></iframe>
+              <div class="certs__panel-footer">
+                <a href="assets/certs/google-ai-essentials.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF en nueva pestaña</a>
+              </div>
+            </div>
           </li>
-          <li>
-            <span class="certs__name">Microsoft Azure Fundamentals</span>
-            <span class="certs__org">AZ-900 · Udemy</span>
+          <li class="certs__item">
+            <div class="certs__info">
+              <span class="certs__name">Microsoft Azure Fundamentals (AZ-900)</span>
+              <span class="certs__org">Microsoft · Udemy</span>
+            </div>
+            <div class="certs__actions">
+              <button class="certs__toggle" type="button" data-cert-toggle aria-expanded="false">Ver certificado</button>
+            </div>
+            <div class="certs__panel" data-cert-panel hidden>
+              <iframe src="assets/certs/udemy-devtalles-1.pdf#view=FitH" title="Certificado Microsoft Azure Fundamentals" loading="lazy"></iframe>
+              <div class="certs__panel-footer">
+                <a href="assets/certs/udemy-devtalles-1.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF en nueva pestaña</a>
+              </div>
+            </div>
           </li>
-          <li>
-            <span class="certs__name">Git y GitHub</span>
-            <span class="certs__org">Control de versiones · Udemy</span>
+          <li class="certs__item">
+            <div class="certs__info">
+              <span class="certs__name">Git y GitHub</span>
+              <span class="certs__org">Control de versiones · Udemy / DevTalles</span>
+            </div>
+            <div class="certs__actions">
+              <button class="certs__toggle" type="button" data-cert-toggle aria-expanded="false">Ver certificado</button>
+            </div>
+            <div class="certs__panel" data-cert-panel hidden>
+              <iframe src="assets/certs/udemy-devtalles-2.pdf#view=FitH" title="Certificado Git y GitHub" loading="lazy"></iframe>
+              <div class="certs__panel-footer">
+                <a href="assets/certs/udemy-devtalles-2.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF en nueva pestaña</a>
+              </div>
+            </div>
           </li>
-          <li>
-            <span class="certs__name">Ingeniería de prompts</span>
-            <span class="certs__org">Udemy</span>
+          <li class="certs__item">
+            <div class="certs__info">
+              <span class="certs__name">Visual Studio Code: Mejora tu velocidad para codificar</span>
+              <span class="certs__org">Udemy</span>
+            </div>
+            <div class="certs__actions">
+              <button class="certs__toggle" type="button" data-cert-toggle aria-expanded="false">Ver certificado</button>
+            </div>
+            <div class="certs__panel" data-cert-panel hidden>
+              <iframe src="assets/certs/udemy-visual-studio-code.pdf#view=FitH" title="Certificado Visual Studio Code" loading="lazy"></iframe>
+              <div class="certs__panel-footer">
+                <a href="assets/certs/udemy-visual-studio-code.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF en nueva pestaña</a>
+              </div>
+            </div>
           </li>
-          <li>
-            <span class="certs__name">Agentes de IA autónomos</span>
-            <span class="certs__org">OpenClaw · Udemy</span>
+          <li class="certs__item">
+            <div class="certs__info">
+              <span class="certs__name">OpenCode: Guía completa para desarrolladores de software</span>
+              <span class="certs__org">Udemy</span>
+            </div>
+            <div class="certs__actions">
+              <button class="certs__toggle" type="button" data-cert-toggle aria-expanded="false">Ver certificado</button>
+            </div>
+            <div class="certs__panel" data-cert-panel hidden>
+              <iframe src="assets/certs/udemy-opencode.pdf#view=FitH" title="Certificado OpenCode" loading="lazy"></iframe>
+              <div class="certs__panel-footer">
+                <a href="assets/certs/udemy-opencode.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF en nueva pestaña</a>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

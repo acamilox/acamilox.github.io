@@ -260,3 +260,24 @@ copyButton?.addEventListener("click", async () => {
 
 const year = document.getElementById("year");
 if (year) year.textContent = String(new Date().getFullYear());
+
+/* ── Acordeón de certificados ─────────────────────────────── */
+
+const certToggles = document.querySelectorAll("[data-cert-toggle]");
+certToggles.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const item = btn.closest(".certs__item");
+    const panel = item ? item.querySelector("[data-cert-panel]") : null;
+    if (!panel) return;
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+    if (expanded) {
+      panel.hidden = true;
+      btn.setAttribute("aria-expanded", "false");
+      btn.textContent = "Ver certificado";
+      return;
+    }
+    panel.hidden = false;
+    btn.setAttribute("aria-expanded", "true");
+    btn.textContent = "Ocultar certificado";
+  });
+});
