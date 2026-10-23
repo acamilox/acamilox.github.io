@@ -14,6 +14,7 @@ Sitio estático en HTML, CSS y JavaScript, sin frameworks ni paso de compilació
 │   ├── css/styles.css          # Sistema de diseño y estilos
 │   ├── js/main.js              # Consola, navegación, reloj y copiado
 │   ├── favicon.svg
+│   ├── og.png                  # Imagen para compartir en redes (1200×630)
 │   └── Andres-Camacho-CV.pdf   # CV descargable
 ├── .nojekyll                   # Evita el procesamiento de Jekyll en GitHub Pages
 └── README.md
