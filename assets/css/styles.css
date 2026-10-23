@@ -422,7 +422,6 @@ code {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  border-bottom: 1px solid var(--line);
   background: linear-gradient(110deg, var(--bg-2) 0%, var(--bg) 72%);
 }
 
@@ -449,8 +448,8 @@ code {
 
 .hero__portrait {
   flex: 0 0 auto;
-  width: clamp(84px, 8.5vw, 116px);
-  height: clamp(84px, 8.5vw, 116px);
+  width: clamp(96px, 11vw, 148px);
+  height: clamp(96px, 11vw, 148px);
   margin: 0;
 }
 
@@ -598,8 +597,6 @@ code {
 .metrics {
   margin-top: clamp(48px, 7vh, 84px);
   padding-block: clamp(30px, 4vw, 44px) 26px;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
   background: var(--bg-2);
 }
 
@@ -654,7 +651,6 @@ code {
 
 .section {
   padding-block: clamp(60px, 9vh, 104px);
-  border-bottom: 1px solid var(--line);
 }
 
 .section__head {
@@ -1184,7 +1180,6 @@ code {
 .contact {
   padding-block: clamp(64px, 10vh, 116px);
   background: var(--bg-2);
-  border-bottom: 1px solid var(--line);
 }
 
 .contact h2 {
@@ -1412,8 +1407,8 @@ code {
   }
 
   .hero__portrait {
-    width: 76px;
-    height: 76px;
+    width: 88px;
+    height: 88px;
   }
 
   .hero__identity h1 {
