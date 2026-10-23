@@ -271,12 +271,12 @@ certToggles.forEach((btn) => {
     if (!panel) return;
     const expanded = btn.getAttribute("aria-expanded") === "true";
     if (expanded) {
-      panel.hidden = true;
+      panel.classList.remove("is-open");
       btn.setAttribute("aria-expanded", "false");
       btn.textContent = "Ver certificado";
       return;
     }
-    panel.hidden = false;
+    panel.classList.add("is-open");
     btn.setAttribute("aria-expanded", "true");
     btn.textContent = "Ocultar certificado";
   });
