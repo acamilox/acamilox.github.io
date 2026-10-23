@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrés Camacho — Backend Developer Junior | Python · FastAPI · PostgreSQL</title>
+<meta name="description" content="Ingeniero de Sistemas y desarrollador backend junior en Bogotá. Construyo APIs con Python, FastAPI y PostgreSQL. Portafolio, proyectos y experiencia.">
+<meta name="author" content="Andrés Camilo Camacho Labrador">
+<meta name="theme-color" content="#080C11">
+<link rel="canonical" href="https://acamilox.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:url" content="https://acamilox.github.io/">
+<meta property="og:title" content="Andrés Camacho — Backend Developer Junior">
+<meta property="og:description" content="APIs con Python, FastAPI y PostgreSQL. Ingeniero de Sistemas en Bogotá, disponible para roles backend junior.">
+<meta property="og:site_name" content="Andrés Camacho">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Andrés Camacho — Backend Developer Junior">
+<meta name="twitter:description" content="APIs con Python, FastAPI y PostgreSQL. Ingeniero de Sistemas en Bogotá.">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Andrés Camilo Camacho Labrador",
+  "jobTitle": "Backend Developer",
+  "description": "Ingeniero de Sistemas especializado en APIs con Python, FastAPI y PostgreSQL.",
+  "url": "https://acamilox.github.io/",
+  "email": "mailto:acamicamacho@gmail.com",
+  "telephone": "+57 301 653 9723",
+  "address": { "@type": "PostalAddress", "addressLocality": "Bogotá", "addressCountry": "CO" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad Piloto de Colombia" },
+  "knowsAbout": ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "Docker", "Azure"],
+  "sameAs": [
+    "https://github.com/acamilox",
+    "https://www.linkedin.com/in/andr%C3%A9s-camilo-camacho-labrador-05b034246/"
+  ]
+}
+</script>
+<script>
+  document.documentElement.classList.add('js');
+  /* Red de seguridad: si main.js no llega a ejecutarse, el contenido se muestra igual. */
+  window.setTimeout(function () {
+    if (window.__portfolioReady) return;
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+  }, 2500);
+</script>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="shell">
+
+  <aside class="rail" id="rail" data-open="false">
+    <div class="rail__bar">
+      <a class="brand" href="#perfil" aria-label="Andrés Camacho — inicio">
+        <span class="brand__mark" aria-hidden="true">AC</span>
+        <span class="brand__text">
+          <strong>Andrés Camacho</strong>
+          <span>Backend Developer</span>
+        </span>
+      </a>
+      <button class="rail__toggle" id="navToggle" aria-expanded="false" aria-controls="railPanel" aria-label="Abrir menú">
+        <span class="rail__toggle-lines" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+
+    <div class="rail__panel" id="railPanel">
+      <nav class="nav" aria-label="Secciones del portafolio">
+        <ol>
+          <li><a href="#perfil" data-nav><span>01</span>Perfil</a></li>
+          <li><a href="#experiencia" data-nav><span>02</span>Experiencia</a></li>
+          <li><a href="#proyectos" data-nav><span>03</span>Proyectos</a></li>
+          <li><a href="#stack" data-nav><span>04</span>Stack</a></li>
+          <li><a href="#formacion" data-nav><span>05</span>Formación</a></li>
+          <li><a href="#contacto" data-nav><span>06</span>Contacto</a></li>
+        </ol>
+      </nav>
+
+      <div class="rail__status">
+        <p class="status"><span class="status__dot" aria-hidden="true"></span>Disponible para roles junior</p>
+        <p class="rail__clock"><span id="clock">Bogotá · --:--</span> <span aria-hidden="true">/</span> UTC−5</p>
+      </div>
+
+      <div class="rail__links">
+        <a href="https://github.com/acamilox" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Andrés Camacho">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/andr%C3%A9s-camilo-camacho-labrador-05b034246/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Andrés Camacho">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.23-2.9-2-2.9-2 0-2.3 1.56-2.3 2.8V21H9V9Z"/></svg>
+        </a>
+        <a href="mailto:acamicamacho@gmail.com" aria-label="Enviar correo a Andrés Camacho">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main" id="contenido">
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero" id="perfil" aria-labelledby="heroTitle">
+      <div class="wrap hero__grid">
+        <div class="hero__intro">
+          <p class="eyebrow">// Ingeniero de Sistemas · Backend</p>
+          <h1 id="heroTitle">Construyo APIs que <em>aguantan producción</em>.</h1>
+          <p class="hero__lead">
+            Ingeniero de Sistemas en Bogotá. Diseño y desarrollo servicios con
+            <strong>Python, FastAPI y PostgreSQL</strong>. Antes resolvía las fallas desde la mesa de
+            ayuda; ahora las prevengo desde el código.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#proyectos">
+              Ver proyectos
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14m0 0 6-6m-6 6-6-6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="assets/Andres-Camacho-CV.pdf" download>
+              Descargar CV
+              <span class="btn__meta" aria-hidden="true">PDF</span>
+            </a>
+          </div>
+
+          <dl class="hero__facts">
+            <div><dt>Ubicación</dt><dd>Bogotá, Colombia</dd></div>
+            <div><dt>Modalidad</dt><dd>Remoto · Híbrido</dd></div>
+            <div><dt>Inglés</dt><dd>B2 intermedio</dd></div>
+          </dl>
+        </div>
+
+        <div class="console" aria-label="Consola con información del perfil">
+          <div class="console__bar">
+            <span class="console__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="console__host">acamilox.dev/api</span>
+          </div>
+
+          <div class="console__tabs" role="tablist" aria-label="Endpoints del perfil">
+            <button role="tab" id="tab-perfil" aria-controls="consolePanel" aria-selected="true" data-endpoint="perfil" tabindex="0">GET /perfil</button>
+            <button role="tab" id="tab-stack" aria-controls="consolePanel" aria-selected="false" data-endpoint="stack" tabindex="-1">GET /stack</button>
+            <button role="tab" id="tab-estado" aria-controls="consolePanel" aria-selected="false" data-endpoint="estado" tabindex="-1">GET /estado</button>
+          </div>
+
+          <div class="console__status">
+            <span class="console__code">200 OK</span>
+            <span aria-hidden="true">·</span>
+            <span id="consoleTime">14 ms</span>
+            <span aria-hidden="true">·</span>
+            <span>application/json</span>
+          </div>
+
+          <div role="tabpanel" id="consolePanel" aria-labelledby="tab-perfil" tabindex="0">
+            <pre class="console__body"><code id="consoleCode"></code></pre>
+          </div>
+          <noscript><p class="console__noscript">Active JavaScript para ver la consola. Toda la información también está en el texto de la página.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ MÉTRICAS ══════════ -->
+    <section class="metrics" aria-label="Resultados profesionales">
+      <div class="wrap">
+        <dl class="metrics__grid">
+          <div class="metric">
+            <dt>Tickets diarios gestionados</dt>
+            <dd>35</dd>
+          </div>
+          <div class="metric">
+            <dt>Resolución en primera línea</dt>
+            <dd>92<span>%</span></dd>
+          </div>
+          <div class="metric">
+            <dt>Tiempo en consultas de históricos</dt>
+            <dd>−30<span>%</span></dd>
+          </div>
+          <div class="metric">
+            <dt>Tiempo de respuesta a incidentes</dt>
+            <dd>−40<span>%</span></dd>
+          </div>
+        </dl>
+        <p class="metrics__note">Indicadores de mi etapa en Social Medical Data · dic 2024 — jun 2026</p>
+      </div>
+    </section>
+
+    <!-- ══════════ EXPERIENCIA ══════════ -->
+    <section class="section reveal" id="experiencia" aria-labelledby="expTitle">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">// 02 — Trayectoria</p>
+          <h2 id="expTitle">Experiencia</h2>
+          <p class="section__lead">Seis años de trabajo se resumen en dos etapas: aprender cómo falla la tecnología y luego construirla para que no falle.</p>
+        </header>
+
+        <div class="timeline">
+          <article class="entry">
+            <div class="entry__meta">
+              <p class="entry__period">dic 2024 — jun 2026</p>
+              <p class="entry__type">Tiempo completo</p>
+            </div>
+            <div class="entry__body">
+              <h3>Ingeniero de Soporte y Desarrollo</h3>
+              <p class="entry__org">Social Medical Data · Bogotá</p>
+              <ul class="entry__list">
+                <li>Desarrollé e implementé la plataforma web de la mesa de ayuda —registro, seguimiento y cierre de incidencias— sobre PostgreSQL, procesando <strong>35 tickets diarios</strong> con <strong>92 % de resolución en primera línea</strong>.</li>
+                <li>Reestructuré el esquema de la base de datos y optimicé consultas SQL: los históricos pasaron a responder <strong>30 % más rápido</strong>.</li>
+                <li>Diseñé un modelo operativo de soporte TIC con flujos de atención, priorización y escalamiento que redujo <strong>40 % los tiempos de respuesta</strong>.</li>
+                <li>Trabajé con equipos multidisciplinarios en análisis técnico-funcional bajo Scrum, con ciclos de entrega quincenales.</li>
+              </ul>
+              <ul class="tags" aria-label="Tecnologías usadas">
+                <li>PostgreSQL</li><li>SQL</li><li>Python</li><li>Automatización</li><li>Scrum</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="entry__meta">
+              <p class="entry__period">may 2024 — nov 2024</p>
+              <p class="entry__type">Práctica profesional</p>
+            </div>
+            <div class="entry__body">
+              <h3>Practicante de Arquitectura TIC</h3>
+              <p class="entry__org">Banco Agrario de Colombia · Bogotá</p>
+              <ul class="entry__list">
+                <li>Apoyé el diseño e implementación de arquitecturas TIC para banca virtual, con foco en disponibilidad, confiabilidad e integración de servicios: <strong>+15 % de eficiencia</strong> en la infraestructura.</li>
+                <li>Analicé indicadores de infraestructura, métricas de rendimiento y patrones de uso; identifiqué <strong>12 oportunidades de mejora</strong> en escalabilidad y continuidad del servicio.</li>
+              </ul>
+              <ul class="tags" aria-label="Tecnologías usadas">
+                <li>Arquitectura TIC</li><li>Azure</li><li>Métricas</li><li>Continuidad</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ PROYECTOS ══════════ -->
+    <section class="section reveal" id="proyectos" aria-labelledby="projTitle">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">// 03 — Código</p>
+          <h2 id="projTitle">Proyectos</h2>
+          <p class="section__lead">Cuatro servicios construidos de principio a fin: modelo de datos, validación, endpoints y despliegue.</p>
+        </header>
+
+        <div class="projects">
+          <article class="project">
+            <div class="project__top">
+              <h3>Task Manager API</h3>
+              <span class="project__badge">CRUD</span>
+            </div>
+            <p class="project__endpoint"><span>POST</span> /tasks <b>→</b> 201 Created</p>
+            <p class="project__desc">API REST para gestionar tareas con operaciones CRUD completas, modelos relacionales y validación de datos. Organizada por capas —models, schemas, crud, database— y documentada con Swagger.</p>
+            <ul class="tags"><li>FastAPI</li><li>SQLAlchemy</li><li>SQLite</li><li>Pydantic</li></ul>
+            <a class="project__link" href="https://github.com/acamilox/Mis-Proyectos-Python/tree/main/Task-Manager-API" target="_blank" rel="noopener noreferrer">
+              Ver repositorio
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </article>
+
+          <article class="project">
+            <div class="project__top">
+              <h3>API de Autenticación con JWT</h3>
+              <span class="project__badge">Auth</span>
+            </div>
+            <p class="project__endpoint"><span>POST</span> /auth/login <b>→</b> 200 · token</p>
+            <p class="project__desc">Registro, login y control de acceso por roles (user/admin) con JWT de expiración configurable y contraseñas hasheadas con bcrypt. Desplegada con Docker y Docker Compose.</p>
+            <ul class="tags"><li>FastAPI</li><li>PostgreSQL</li><li>JWT</li><li>bcrypt</li><li>Docker</li></ul>
+            <a class="project__link" href="https://github.com/acamilox/Mis-Proyectos-Python/tree/main/API-de-Autenticacion-con-JWT" target="_blank" rel="noopener noreferrer">
+              Ver repositorio
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </article>
+
+          <article class="project">
+            <div class="project__top">
+              <h3>URL Shortener API</h3>
+              <span class="project__badge">Service</span>
+            </div>
+            <p class="project__endpoint"><span>GET</span> /r/{code} <b>→</b> 301 Moved</p>
+            <p class="project__desc">Acorta URLs con códigos únicos generados mediante <code>secrets</code>, redirección 301 automática y conteo de visitas por enlace. Validación y normalización de la URL de entrada con Pydantic.</p>
+            <ul class="tags"><li>FastAPI</li><li>SQLAlchemy</li><li>SQLite</li><li>Pydantic</li></ul>
+            <a class="project__link" href="https://github.com/acamilox/Mis-Proyectos-Python/tree/main/URL-Shortener-API" target="_blank" rel="noopener noreferrer">
+              Ver repositorio
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </article>
+
+          <article class="project">
+            <div class="project__top">
+              <h3>Dashboard UCI Adultos</h3>
+              <span class="project__badge">Data</span>
+            </div>
+            <p class="project__endpoint"><span>dash</span>.run_server() <b>→</b> :8050</p>
+            <p class="project__desc">Tablero en Dash y Plotly para los indicadores de una UCI: ocupación, mortalidad, estancia, infecciones asociadas a la atención y eventos adversos. Cuatro módulos, filtros por mes y exportación a Excel y CSV.</p>
+            <ul class="tags"><li>Python</li><li>Dash</li><li>Plotly</li><li>pandas</li></ul>
+            <a class="project__link" href="https://github.com/acamilox/Mis-Proyectos-Python/tree/main/Dashboard-UCI-Adultos-2025" target="_blank" rel="noopener noreferrer">
+              Ver repositorio
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </article>
+        </div>
+
+        <a class="projects__more" href="https://github.com/acamilox?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <span>Todo el código está en GitHub</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ══════════ STACK ══════════ -->
+    <section class="section reveal" id="stack" aria-labelledby="stackTitle">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">// 04 — Herramientas</p>
+          <h2 id="stackTitle">Stack técnico</h2>
+          <p class="section__lead">Lo que uso a diario para escribir, probar y desplegar servicios.</p>
+        </header>
+
+        <div class="stack">
+          <div class="stack__row">
+            <h3 class="stack__key">Lenguajes</h3>
+            <ul class="stack__vals"><li>Python</li><li>SQL</li><li>Bash</li></ul>
+          </div>
+          <div class="stack__row">
+            <h3 class="stack__key">Backend y APIs</h3>
+            <ul class="stack__vals"><li>FastAPI</li><li>SQLAlchemy</li><li>Pydantic</li><li>REST</li><li>JWT</li><li>CRUD</li><li>POO</li></ul>
+          </div>
+          <div class="stack__row">
+            <h3 class="stack__key">Bases de datos</h3>
+            <ul class="stack__vals"><li>PostgreSQL</li><li>SQL Server</li><li>MariaDB</li><li>MongoDB</li><li>SQLite</li><li>phpMyAdmin</li></ul>
+          </div>
+          <div class="stack__row">
+            <h3 class="stack__key">Cloud y DevOps</h3>
+            <ul class="stack__vals"><li>Docker</li><li>Docker Compose</li><li>Azure</li><li>GitHub Actions</li><li>Git</li><li>Linux</li></ul>
+          </div>
+          <div class="stack__row">
+            <h3 class="stack__key">Prácticas</h3>
+            <ul class="stack__vals"><li>SOLID</li><li>Clean Code</li><li>Scrum</li><li>Documentación OpenAPI</li></ul>
+          </div>
+          <div class="stack__row">
+            <h3 class="stack__key">Herramientas</h3>
+            <ul class="stack__vals"><li>VS Code</li><li>Postman</li><li>Swagger</li><li>Azure Portal</li><li>GitHub</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ FORMACIÓN ══════════ -->
+    <section class="section reveal" id="formacion" aria-labelledby="eduTitle">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">// 05 — Estudios</p>
+          <h2 id="eduTitle">Formación</h2>
+        </header>
+
+        <div class="edu">
+          <article class="edu__main">
+            <p class="entry__period">2020 — 2025</p>
+            <h3>Ingeniería de Sistemas</h3>
+            <p class="entry__org">Universidad Piloto de Colombia · Girardot</p>
+            <p class="edu__desc">Énfasis en desarrollo de software, bases de datos y arquitectura de sistemas.</p>
+          </article>
+
+          <article class="edu__main">
+            <p class="entry__period">Certificación</p>
+            <h3>Programa Especializado en Python</h3>
+            <p class="entry__org">Microsoft · Coursera</p>
+            <p class="edu__desc">Seis cursos: fundamentos, análisis y visualización de datos, automatización y scripting, desarrollo web, técnicas avanzadas y proyecto final.</p>
+          </article>
+        </div>
+
+        <ul class="certs">
+          <li>
+            <span class="certs__name">Google AI Essentials</span>
+            <span class="certs__org">Google · Coursera</span>
+            <a class="certs__verify" href="https://coursera.org/verify/specialization/PSSA1HXF22SE" target="_blank" rel="noopener noreferrer">Verificar</a>
+          </li>
+          <li>
+            <span class="certs__name">Microsoft Azure Fundamentals</span>
+            <span class="certs__org">AZ-900 · Udemy</span>
+          </li>
+          <li>
+            <span class="certs__name">Git y GitHub</span>
+            <span class="certs__org">Control de versiones · Udemy</span>
+          </li>
+          <li>
+            <span class="certs__name">Ingeniería de prompts</span>
+            <span class="certs__org">Udemy</span>
+          </li>
+          <li>
+            <span class="certs__name">Agentes de IA autónomos</span>
+            <span class="certs__org">OpenClaw · Udemy</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════ CONTACTO ══════════ -->
+    <section class="contact reveal" id="contacto" aria-labelledby="contactTitle">
+      <div class="wrap">
+        <p class="eyebrow">// 06 — Contacto</p>
+        <h2 id="contactTitle">¿Buscando un backend junior que ya sabe lo que es un incidente en producción?</h2>
+        <p class="contact__lead">Estoy disponible de inmediato para roles de Backend o Python Developer, en Bogotá o en remoto. Respondo en menos de 24 horas.</p>
+
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:acamicamacho@gmail.com?subject=Oportunidad%20laboral%20—%20Backend%20Developer">
+            Escribirme
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
+          </a>
+          <button class="btn btn--ghost" type="button" data-copy="acamicamacho@gmail.com">
+            Copiar correo
+            <span class="btn__meta" aria-hidden="true" data-copy-label>Ctrl+C</span>
+          </button>
+        </div>
+
+        <ul class="contact__list">
+          <li><span>Correo</span><a href="mailto:acamicamacho@gmail.com">acamicamacho@gmail.com</a></li>
+          <li><span>Teléfono</span><a href="tel:+573016539723">+57 301 653 9723</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/andr%C3%A9s-camilo-camacho-labrador-05b034246/" target="_blank" rel="noopener noreferrer">/in/andrés-camilo-camacho-labrador</a></li>
+          <li><span>GitHub</span><a href="https://github.com/acamilox" target="_blank" rel="noopener noreferrer">@acamilox</a></li>
+        </ul>
+        <p class="copy-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <p>Diseñado y construido por Andrés Camacho. HTML, CSS y JavaScript sin frameworks.</p>
+        <p>Bogotá, Colombia · <span id="year">2026</span></p>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
