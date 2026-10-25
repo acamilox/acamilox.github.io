@@ -30,7 +30,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/hero-photo.webp" fetchpriority="high">
-<link rel="stylesheet" href="assets/css/styles.css?v=20261025r">
+<link rel="stylesheet" href="assets/css/styles.css?v=20261025s">
 
 <script type="application/ld+json">
 {
@@ -88,7 +88,9 @@
           <li><a href="#proyectos" data-nav><span>03</span>Proyectos</a></li>
           <li><a href="#stack" data-nav><span>04</span>Stack</a></li>
           <li><a href="#formacion" data-nav><span>05</span>Formación</a></li>
-          <li><a href="#contacto" data-nav><span>06</span>Contacto</a></li>
+          <li><a href="#certificaciones" data-nav><span>06</span>Certificaciones</a></li>
+          <li><a href="#formacion-complementaria" data-nav><span>07</span>Formación complementaria</a></li>
+          <li><a href="#contacto" data-nav><span>08</span>Contacto</a></li>
         </ol>
       </nav>
 
@@ -322,20 +324,36 @@
               <span class="certs__org">Universidad Piloto de Colombia · Girardot · 2020 — 2025</span>
             </div>
             <div class="certs__actions">
-              <a class="certs__link" href="assets/certs/diploma-ingenieria-sistemas.pdf" target="_blank" rel="noopener noreferrer">Ver diploma</a>
-              <a class="certs__link" href="assets/certs/acta-grado-ingenieria-sistemas.pdf" target="_blank" rel="noopener noreferrer">Ver acta</a>
-              <button class="certs__toggle" type="button" data-cert-toggle aria-expanded="false">Ver diploma</button>
+              <div class="certs__select" data-cert-select>
+                <button class="certs__toggle" type="button" data-cert-toggle aria-expanded="false">Ver documento</button>
+                <div class="certs__select-menu" data-cert-menu hidden>
+                  <button type="button" data-cert-src="assets/certs/diploma-ingenieria-sistemas.pdf" data-cert-title="Diploma de Ingeniería de Sistemas">Diploma</button>
+                  <button type="button" data-cert-src="assets/certs/acta-grado-ingenieria-sistemas.pdf" data-cert-title="Acta de grado de Ingeniería de Sistemas">Acta de grado</button>
+                </div>
+              </div>
             </div>
             <div class="certs__panel" data-cert-panel>
               <div class="certs__panel-inner">
-                <iframe src="assets/certs/diploma-ingenieria-sistemas.pdf#view=FitH" title="Diploma de Ingeniería de Sistemas" loading="lazy"></iframe>
+                <iframe data-cert-frame src="assets/certs/diploma-ingenieria-sistemas.pdf#view=FitH" title="Documento de Ingeniería de Sistemas" loading="lazy"></iframe>
                 <div class="certs__panel-footer">
-                  <a href="assets/certs/diploma-ingenieria-sistemas.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF en nueva pestaña</a>
+                  <a data-cert-open href="assets/certs/diploma-ingenieria-sistemas.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF en nueva pestaña</a>
                 </div>
               </div>
             </div>
           </li>
+        </ul>
+      </div>
+    </section>
 
+    <!-- ══════════ CERTIFICACIONES ══════════ -->
+    <section class="section reveal" id="certificaciones" aria-labelledby="certTitle">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">// 05b — Certificaciones</p>
+          <h2 id="certTitle">Certificaciones</h2>
+        </header>
+
+        <ul class="certs">
           <li class="certs__item">
             <div class="certs__info">
               <span class="certs__name">Programa Especializado en Python</span>
@@ -353,14 +371,13 @@
               </div>
             </div>
           </li>
-          
-<li class="certs__item">
+
+          <li class="certs__item">
             <div class="certs__info">
               <span class="certs__name">Google AI Essentials</span>
               <span class="certs__org">Google · Coursera · Julio 2026</span>
             </div>
             <div class="certs__actions">
-              <a class="certs__link" href="https://www.credly.com/go/vP3Am1Fq" target="_blank" rel="noopener noreferrer">Verificar</a>
               <button class="certs__toggle" type="button" data-cert-toggle aria-expanded="false">Ver certificado</button>
             </div>
             <div class="certs__panel" data-cert-panel>
@@ -372,9 +389,22 @@
               </div>
             </div>
           </li>
-          
         </ul>
       </div>
+    </section>
+
+    <!-- ══════════ FORMACIÓN COMPLEMENTARIA ══════════ -->
+    <section class="section reveal" id="formacion-complementaria" aria-labelledby="compTitle">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">// 05c — Complementaria</p>
+          <h2 id="compTitle">Formación complementaria</h2>
+        </header>
+
+        <ul class="certs">
+        </ul>
+      </div>
+    </section>
     </section>
 
     <!-- ══════════ CONTACTO ══════════ -->

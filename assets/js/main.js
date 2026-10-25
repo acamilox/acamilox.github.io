@@ -265,7 +265,22 @@ if (year) year.textContent = String(new Date().getFullYear());
 
 const certToggles = document.querySelectorAll("[data-cert-toggle]");
 certToggles.forEach((btn) => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener("click", (e) => {
+    const select = btn.closest("[data-cert-select]");
+    if (select) {
+      const menu = select.querySelector("[data-cert-menu]");
+      if (menu) {
+        if (menu.hasAttribute("hidden")) {
+          menu.removeAttribute("hidden");
+          btn.setAttribute("aria-expanded", "true");
+        } else {
+          menu.setAttribute("hidden", "");
+          btn.setAttribute("aria-expanded", "false");
+        }
+        e.stopPropagation();
+        return;
+      }
+    }
     const item = btn.closest(".certs__item");
     const panel = item ? item.querySelector("[data-cert-panel]") : null;
     if (!panel) return;
@@ -273,11 +288,52 @@ certToggles.forEach((btn) => {
     if (expanded) {
       panel.classList.remove("is-open");
       btn.setAttribute("aria-expanded", "false");
-      btn.textContent = "Ver certificado";
+      if (!btn.closest("[data-cert-select]")) btn.textContent = "Ver certificado";
       return;
     }
     panel.classList.add("is-open");
     btn.setAttribute("aria-expanded", "true");
-    btn.textContent = "Ocultar certificado";
+    if (!btn.closest("[data-cert-select]")) btn.textContent = "Ocultar certificado";
+  });
+});
+
+document.querySelectorAll("[data-cert-select]").forEach((select) => {
+  const menu = select.querySelector("[data-cert-menu]");
+  const btn = select.querySelector("[data-cert-toggle]");
+  if (!menu || !btn) return;
+  menu.querySelectorAll("button").forEach((opt) => {
+    opt.addEventListener("click", () => {
+      const item = select.closest(".certs__item");
+      const frame = item ? item.querySelector("[data-cert-frame]") : null;
+      const link = item ? item.querySelector("[data-cert-open]") : null;
+      const panel = item ? item.querySelector("[data-cert-panel]") : null;
+      const src = opt.getAttribute("data-cert-src");
+      const title = opt.getAttribute("data-cert-title");
+      if (src && frame) {
+        frame.src = src + "#view=FitH";
+        if (title) frame.title = title;
+      }
+      if (src && link) {
+        link.href = src;
+      }
+      menu.setAttribute("hidden", "");
+      btn.setAttribute("aria-expanded", "false");
+      if (panel && !panel.classList.contains("is-open")) {
+        panel.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+});
+
+document.addEventListener("click", (e) => {
+  document.querySelectorAll("[data-cert-select]").forEach((select) => {
+    const menu = select.querySelector("[data-cert-menu]");
+    const btn = select.querySelector("[data-cert-toggle]");
+    if (!menu || !btn) return;
+    if (!select.contains(e.target)) {
+      menu.setAttribute("hidden", "");
+      btn.setAttribute("aria-expanded", "false");
+    }
   });
 });
