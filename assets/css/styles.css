@@ -431,12 +431,14 @@ code {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
-  opacity: 0.9;
-  filter: saturate(1.05) contrast(1.02);
-  -webkit-mask-image: linear-gradient(to right, transparent 10%, #000 60%);
-  mask-image: linear-gradient(to right, transparent 10%, #000 60%);
+  background-image: url("../profile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.18;
+  filter: grayscale(1) saturate(0.8) contrast(1.1);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 0.6) 100%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 0.6) 100%);
 }
 
 .hero__banner-inner {
@@ -567,29 +569,30 @@ code {
 }
 
 .btn--primary {
-  background: var(--amber);
-  border-color: var(--amber);
-  color: #080c11;
+  background: #0f2a4a;
+  border-color: #1a3f6b;
+  color: var(--text);
   font-weight: 700;
-  box-shadow: 0 4px 18px rgba(242, 166, 59, 0.32);
+  box-shadow: 0 4px 18px rgba(31, 79, 150, 0.32);
 }
 
 .btn--primary:hover {
-  background: #ffb852;
-  border-color: #ffb852;
-  box-shadow: 0 6px 24px rgba(242, 166, 59, 0.45);
+  background: #153a6b;
+  border-color: #1f4f96;
+  box-shadow: 0 6px 24px rgba(31, 79, 150, 0.5);
   transform: translateY(-2px);
 }
 
 .btn--ghost {
-  background: transparent;
-  border-color: var(--line);
+  background: #0f2a4a;
+  border-color: #1a3f6b;
   color: var(--text);
 }
 
 .btn--ghost:hover {
-  background: var(--surface);
-  border-color: #33475b;
+  background: #153a6b;
+  border-color: #1f4f96;
+  box-shadow: 0 4px 18px rgba(31, 79, 150, 0.32);
 }
 
 .btn__meta {
@@ -1137,9 +1140,9 @@ code {
 }
 
 .certs__toggle:hover {
-  border-color: var(--blue-line);
-  color: var(--blue);
-  background: var(--blue-soft);
+  border-color: #1f4f96;
+  color: var(--text);
+  background: #153a6b;
 }
 
 .certs__toggle[aria-expanded="true"] {
