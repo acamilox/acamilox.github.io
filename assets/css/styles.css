@@ -458,10 +458,17 @@ code {
 
 .hero__lead {
   margin-top: 18px;
-  max-width: 70ch;
+  max-width: none;
   color: var(--muted);
   font-size: clamp(1rem, 1.16vw, 1.06rem);
   line-height: 1.9;
+  white-space: nowrap;
+}
+
+@media (max-width: 1180px) {
+  .hero__lead {
+    white-space: normal;
+  }
 }
 
 .hero__actions {
