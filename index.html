@@ -30,7 +30,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/hero-photo.webp" fetchpriority="high">
-<link rel="stylesheet" href="assets/css/styles.css?v=20261025p">
+<link rel="stylesheet" href="assets/css/styles.css?v=20261025q">
 
 <script type="application/ld+json">
 {
@@ -317,22 +317,33 @@
           <h2 id="eduTitle">Formación</h2>
         </header>
 
-        <div class="edu">
-          <article class="edu__main">
-            <p class="entry__period">2020 — 2025</p>
-            <h3>Ingeniería de Sistemas</h3>
-            <p class="entry__org">Universidad Piloto de Colombia · Girardot</p>
-            <p class="edu__desc">Énfasis en desarrollo de software, bases de datos y arquitectura de sistemas.</p>
-          </article>
-        </div>
+        <ul class="certs">
+          <li class="certs__item">
+            <div class="certs__info">
+              <span class="certs__name">Ingeniería de Sistemas</span>
+              <span class="certs__org">Universidad Piloto de Colombia · Girardot · 2020 — 2025</span>
+            </div>
+            <div class="certs__actions">
+              <a class="certs__link" href="assets/certs/diploma-ingenieria-sistemas.pdf" target="_blank" rel="noopener noreferrer">Ver diploma</a>
+              <a class="certs__link" href="assets/certs/acta-grado-ingenieria-sistemas.pdf" target="_blank" rel="noopener noreferrer">Ver acta</a>
+              <button class="certs__toggle" type="button" data-cert-toggle aria-expanded="false">Ver diploma</button>
+            </div>
+            <div class="certs__panel" data-cert-panel>
+              <div class="certs__panel-inner">
+                <iframe src="assets/certs/diploma-ingenieria-sistemas.pdf#view=FitH" title="Diploma de Ingeniería de Sistemas" loading="lazy"></iframe>
+                <div class="certs__panel-footer">
+                  <a href="assets/certs/diploma-ingenieria-sistemas.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF en nueva pestaña</a>
+                </div>
+              </div>
+            </div>
+          </li>
 
-        <div class="edu" style="margin-top:18px;">
-          <article class="edu__main">
-            <p class="entry__period">Programa Especializado</p>
-            <h3>Programa Especializado en Python</h3>
-            <p class="entry__org">Microsoft · Coursera</p>
-            <p class="edu__desc">Seis cursos: fundamentos, análisis y visualización de datos, automatización y scripting, desarrollo web, técnicas avanzadas y proyecto final.</p>
-            <div class="certs__actions" style="margin-top:16px;justify-content:flex-start;">
+          <li class="certs__item">
+            <div class="certs__info">
+              <span class="certs__name">Programa Especializado en Python</span>
+              <span class="certs__org">Microsoft · Coursera</span>
+            </div>
+            <div class="certs__actions">
               <button class="certs__toggle" type="button" data-cert-toggle aria-expanded="false">Ver certificado</button>
             </div>
             <div class="certs__panel" data-cert-panel>
@@ -343,10 +354,7 @@
                 </div>
               </div>
             </div>
-          </article>
-        </div>
-
-        <ul class="certs">
+          </li>
           
 <li class="certs__item">
             <div class="certs__info">
