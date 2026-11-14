@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camilo | Backend Developer Portfolio</title>
+    <!-- Tailwind CSS por CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            card: '#1e293b',
+                            border: '#334155',
+                            accent: '#10b981',
+                            accentHover: '#059669'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark">
+
+    <!-- NAVEGACIÓN -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-brand-dark/80 border-b border-brand-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <span class="font-mono text-lg font-bold tracking-tight text-brand-accent">&lt;camilo.dev /&gt;</span>
+            <div class="flex items-center space-x-6 text-sm font-medium">
+                <a href="#sobre-mi" class="hover:text-brand-accent transition">Sobre mí</a>
+                <a href="#proyectos" class="hover:text-brand-accent transition">Proyectos</a>
+                <a href="#stack" class="hover:text-brand-accent transition">Stack</a>
+                <a href="#contacto" class="hover:text-brand-accent transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="py-20 sm:py-28 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-brand-accent/10 text-brand-accent border border-brand-accent/20 mb-6">
+            <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+            Disponible para oportunidades laborales
+        </div>
+        <!-- PERSONALIZAR: Cambia tu nombre y descripción -->
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-4">
+            Hola, soy <span class="text-brand-accent">Camilo</span>.
+        </h1>
+        <p class="text-xl sm:text-2xl text-slate-400 font-medium mb-6">
+            Backend Developer Junior | Python & Arquitectura de APIs
+        </p>
+        <p class="max-w-2xl text-slate-400 text-base sm:text-lg mb-8 leading-relaxed">
+            Construyo servicios backend eficientes, seguros y mantenibles. Enfocado en modelado de bases de datos relacionales con PostgreSQL y SQLAlchemy, autenticación robusta y diseño de APIs RESTful con FastAPI.
+        </p>
+        <div class="flex flex-wrap items-center gap-4 justify-center sm:justify-start">
+            <a href="#proyectos" class="bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-semibold px-6 py-3 rounded-lg transition shadow-lg shadow-brand-accent/10">
+                Ver Proyectos
+            </a>
+            <!-- BOTÓN CV TEMPORALMENTE DESHABILITADO (Recomendado hasta tener el PDF real) -->
+            <!-- Cuando coloques tu PDF en ./assets/cv/cv-camilo-backend.pdf, reemplaza este <span> por el <a>:
+            <a href="./assets/cv/cv-camilo-backend.pdf" target="_blank" class="border border-brand-border hover:bg-brand-card text-white font-medium px-6 py-3 rounded-lg transition">
+                Descargar CV
+            </a>
+            -->
+            <span class="border border-brand-border/60 bg-brand-card/40 text-slate-500 font-medium px-6 py-3 rounded-lg cursor-not-allowed select-none text-sm inline-flex items-center">
+                CV: Próximamente
+            </span>
+        </div>
+    </header>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="py-16 bg-brand-card/30 border-y border-brand-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6 flex items-center gap-3">
+                <span class="text-brand-accent font-mono text-xl">01.</span> Sobre Mí
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                <div class="md:col-span-2 space-y-4 text-slate-300 leading-relaxed text-base">
+                    <!-- PERSONALIZAR: Edita tu historia y enfoque -->
+                    <p>
+                        Soy un desarrollador enfocado en el ecosistema backend con Python. Mi objetivo es escribir código limpio, predecible y respaldado por pruebas automatizadas con Pytest.
+                    </p>
+                    <p>
+                        No construyo interfaces frontend complejas; me especializo en la lógica de negocio, persistencia de datos relacional con PostgreSQL y SQLAlchemy síncrono, migraciones controladas con Alembic y empaquetado mediante Docker.
+                    </p>
+                    <p>
+                        Busco unirme a un equipo técnico donde pueda colaborar en el ciclo de vida del backend, aprender de ingenieros senior y entregar valor continuo en producción.
+                    </p>
+                </div>
+                <div class="bg-brand-card p-6 rounded-xl border border-brand-border">
+                    <h3 class="font-semibold text-white mb-3 text-sm tracking-wider uppercase text-brand-accent font-mono">Principios de Trabajo</h3>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex items-center gap-2">✔ Tipado estricto con Pydantic</li>
+                        <li class="flex items-center gap-2">✔ Cobertura de tests con Pytest</li>
+                        <li class="flex items-center gap-2">✔ Migraciones con Alembic</li>
+                        <li class="flex items-center gap-2">✔ Entornos reproducibles en Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12">
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+                    <span class="text-brand-accent font-mono text-xl">02.</span> Proyectos Backend
+                </h2>
+                <p class="text-slate-400 text-sm mt-2">APIs desarrolladas con FastAPI, PostgreSQL y documentación interactiva.</p>
+            </div>
+        </div>
+
+        <!-- CONTENEDOR DINÁMICO DE PROYECTOS (cargado vía projects.json) -->
+        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <p class="text-slate-500 text-sm col-span-full">Cargando proyectos...</p>
+        </div>
+    </section>
+
+    <!-- STACK TÉCNICO -->
+    <section id="stack" class="py-16 bg-brand-card/30 border-y border-brand-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-8 flex items-center gap-3">
+                <span class="text-brand-accent font-mono text-xl">03.</span> Stack Tecnológico
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4">
+                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
+                    <span class="block text-2xl mb-1">🐍</span>
+                    <span class="font-medium text-white text-sm">Python</span>
+                </div>
+                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
+                    <span class="block text-2xl mb-1">⚡</span>
+                    <span class="font-medium text-white text-sm">FastAPI</span>
+                </div>
+                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
+                    <span class="block text-2xl mb-1">🐘</span>
+                    <span class="font-medium text-white text-sm">PostgreSQL</span>
+                </div>
+                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
+                    <span class="block text-2xl mb-1">🧱</span>
+                    <span class="font-medium text-white text-sm">SQLAlchemy</span>
+                </div>
+                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
+                    <span class="block text-2xl mb-1">🐳</span>
+                    <span class="font-medium text-white text-sm">Docker</span>
+                </div>
+                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
+                    <span class="block text-2xl mb-1">🧪</span>
+                    <span class="font-medium text-white text-sm">Pytest</span>
+                </div>
+                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
+                    <span class="block text-2xl mb-1">🔄</span>
+                    <span class="font-medium text-white text-sm">Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4 flex items-center justify-center gap-3">
+            <span class="text-brand-accent font-mono text-xl">04.</span> ¿Conectamos?
+        </h2>
+        <p class="text-slate-400 mb-8 max-w-lg mx-auto">
+            Estoy en búsqueda activa de mi primera posición como desarrollador backend. Si tienes una vacante o quieres revisar mi código, escríbeme.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <!-- PERSONALIZAR: Reemplaza con tus enlaces reales -->
+            <a href="mailto:tu-correo@gmail.com" class="bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-semibold px-6 py-3 rounded-lg transition">
+                Enviar Correo
+            </a>
+            <a href="https://linkedin.com/in/tu-usuario" target="_blank" class="border border-brand-border hover:bg-brand-card text-white font-medium px-6 py-3 rounded-lg transition">
+                LinkedIn
+            </a>
+            <a href="https://github.com/tu-usuario" target="_blank" class="border border-brand-border hover:bg-brand-card text-white font-medium px-6 py-3 rounded-lg transition">
+                GitHub
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-brand-border text-center text-xs text-slate-500 font-mono">
+        <p>© 2026 Camilo. Portafolio Backend alojado en GitHub Pages.</p>
+    </footer>
+
+    <!-- SCRIPT DE RENDERIZADO DINÁMICO DE PROYECTOS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            const grid = document.getElementById("projects-grid");
+            try {
+                const response = await fetch("projects.json");
+                const projects = await response.json();
+
+                grid.innerHTML = projects.map(proj => {
+                    const isAvailable = proj.status === "live";
+                    const isDev = proj.status === "in_progress";
+                    
+                    const statusBadge = isAvailable
+                        ? `<span class="px-2.5 py-0.5 rounded text-xs font-mono font-medium bg-emerald-950/80 text-emerald-400 border border-emerald-800">En Vivo</span>`
+                        : (isDev 
+                            ? `<span class="px-2.5 py-0.5 rounded text-xs font-mono font-medium bg-amber-950/80 text-amber-400 border border-amber-800">En Desarrollo</span>`
+                            : `<span class="px-2.5 py-0.5 rounded text-xs font-mono font-medium bg-slate-800 text-slate-400 border border-slate-700">Próximamente</span>`);
+
+                    // Botón Código: Si tiene link válido es enlace, si no es botón deshabilitado explícito
+                    const codeBtn = (proj.repoUrl && proj.repoUrl !== "#")
+                        ? `<a href="${proj.repoUrl}" target="_blank" class="text-xs font-semibold px-3 py-2 rounded bg-slate-800 hover:bg-slate-700 text-white transition text-center flex-1">Ver Código</a>`
+                        : `<span class="text-xs font-medium px-3 py-2 rounded bg-slate-800/40 border border-slate-700/50 text-slate-500 cursor-not-allowed select-none text-center flex-1">Código: Próximamente</span>`;
+
+                    // Botón API en Vivo: Si tiene link válido es enlace, si no es botón deshabilitado explícito
+                    const liveBtn = (proj.liveUrl && proj.liveUrl !== "#")
+                        ? `<a href="${proj.liveUrl}" target="_blank" class="text-xs font-semibold px-3 py-2 rounded bg-brand-accent hover:bg-brand-accentHover text-brand-dark transition text-center flex-1">Swagger UI</a>`
+                        : `<span class="text-xs font-medium px-3 py-2 rounded bg-slate-800/40 border border-slate-700/50 text-slate-500 cursor-not-allowed select-none text-center flex-1">API: Próximamente</span>`;
+
+                    return `
+                        <div class="bg-brand-card border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:border-slate-500 transition shadow-lg">
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-2xl">${proj.icon || '📦'}</span>
+                                    ${statusBadge}
+                                </div>
+                                <h3 class="text-lg font-bold text-white mb-2">${proj.title}</h3>
+                                <p class="text-slate-400 text-sm mb-4 leading-relaxed">${proj.description}</p>
+                                <div class="flex flex-wrap gap-1.5 mb-6">
+                                    ${proj.tags.map(t => `<span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-900 text-slate-300 border border-slate-800">${t}</span>`).join('')}
+                                </div>
+                            </div>
+                            <div class="flex gap-2 pt-4 border-t border-brand-border/60">
+                                ${codeBtn}
+                                ${liveBtn}
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            } catch (err) {
+                console.error("Error al cargar projects.json:", err);
+                grid.innerHTML = `<p class="text-red-400 text-sm col-span-full">Error al cargar la lista de proyectos.</p>`;
+            }
+        });
+    </script>
+</body>
+</html>

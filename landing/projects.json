@@ -1,0 +1,32 @@
+[
+  {
+    "id": "iam-service",
+    "icon": "🔐",
+    "title": "IAM Auth Microservice",
+    "description": "Servicio de autenticación y autorización con JWT, rotación estricta de Refresh Tokens y control de acceso basado en roles (RBAC).",
+    "tags": ["FastAPI", "PostgreSQL", "SQLAlchemy", "Pytest"],
+    "status": "in_progress",
+    "repoUrl": "#",
+    "liveUrl": "#"
+  },
+  {
+    "id": "order-engine",
+    "icon": "⚡",
+    "title": "Concurrency-Safe Order Engine",
+    "description": "API transaccional de órdenes e inventario diseñada para resistir alta concurrencia mediante bloqueos pesimistas en PostgreSQL.",
+    "tags": ["FastAPI", "PostgreSQL", "SQLAlchemy", "Docker"],
+    "status": "upcoming",
+    "repoUrl": "#",
+    "liveUrl": "#"
+  },
+  {
+    "id": "analytics-api",
+    "icon": "📊",
+    "title": "Analytics Streaming API",
+    "description": "API de ingesta y agregación de eventos en tiempo real con exportación de reportes en streaming y consultas optimizadas.",
+    "tags": ["FastAPI", "PostgreSQL", "SQLAlchemy", "Streaming"],
+    "status": "upcoming",
+    "repoUrl": "#",
+    "liveUrl": "#"
+  }
+]
