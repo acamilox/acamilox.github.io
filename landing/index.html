@@ -29,22 +29,22 @@
     <!-- NAVEGACIÓN -->
     <nav class="sticky top-0 z-50 backdrop-blur-md bg-brand-dark/90 border-b border-brand-border">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-end">
-            <div class="flex items-center space-x-1.5 sm:space-x-3 text-sm font-medium">
-                <a href="#sobre-mi" class="px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-500/40 border border-transparent transition-all duration-200 flex items-center gap-1.5 group">
-                    <span class="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-emerald-400 group-hover:shadow-[0_0_8px_#10b981] transition-all duration-200"></span>
+            <div class="flex items-center space-x-6 sm:space-x-8 text-sm font-medium">
+                <a href="#sobre-mi" class="relative py-2 text-slate-300 hover:text-emerald-400 transition-colors duration-200 group">
                     Sobre mí
+                    <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-emerald-400 shadow-[0_0_8px_#10b981] group-hover:w-full transition-all duration-300"></span>
                 </a>
-                <a href="#proyectos" class="px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-500/40 border border-transparent transition-all duration-200 flex items-center gap-1.5 group">
-                    <span class="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-emerald-400 group-hover:shadow-[0_0_8px_#10b981] transition-all duration-200"></span>
+                <a href="#proyectos" class="relative py-2 text-slate-300 hover:text-emerald-400 transition-colors duration-200 group">
                     Proyectos
+                    <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-emerald-400 shadow-[0_0_8px_#10b981] group-hover:w-full transition-all duration-300"></span>
                 </a>
-                <a href="#stack" class="px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-500/40 border border-transparent transition-all duration-200 flex items-center gap-1.5 group">
-                    <span class="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-emerald-400 group-hover:shadow-[0_0_8px_#10b981] transition-all duration-200"></span>
+                <a href="#stack" class="relative py-2 text-slate-300 hover:text-emerald-400 transition-colors duration-200 group">
                     Stack
+                    <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-emerald-400 shadow-[0_0_8px_#10b981] group-hover:w-full transition-all duration-300"></span>
                 </a>
-                <a href="#contacto" class="px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-500/40 border border-transparent transition-all duration-200 flex items-center gap-1.5 group">
-                    <span class="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-emerald-400 group-hover:shadow-[0_0_8px_#10b981] transition-all duration-200"></span>
+                <a href="#contacto" class="relative py-2 text-slate-300 hover:text-emerald-400 transition-colors duration-200 group">
                     Contacto
+                    <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-emerald-400 shadow-[0_0_8px_#10b981] group-hover:w-full transition-all duration-300"></span>
                 </a>
             </div>
         </div>
@@ -67,14 +67,14 @@
 
             <!-- TEXTO A LA DERECHA -->
             <div class="text-center md:text-left flex-1 min-w-0">
-                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[2.65rem] font-extrabold text-white tracking-tight mb-4 leading-tight whitespace-nowrap overflow-x-auto">
+                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
                     Hola, soy <span class="text-brand-accent">Andrés Camilo Camacho Labrador</span>
                 </h1>
                 <p class="text-xl sm:text-2xl text-slate-300 font-medium mb-6">
                     Backend Developer | Python, Automatización & Agentes de IA
                 </p>
-                <p class="max-w-2xl text-slate-200 text-base sm:text-lg mb-8 leading-relaxed">
-                    Desarrollador backend de alto impacto especializado en Python (FastAPI, PostgreSQL, SQLAlchemy). Automatizo procesos y maximizo la velocidad de desarrollo implementando <span class="text-white font-semibold">agentes de Inteligencia Artificial autónomos</span> con <span class="text-brand-accent font-semibold">OpenClaw</span> y los principales agentes de codificación del mercado (<span class="text-sky-300 font-medium">Claude Code, Cursor y GitHub Copilot</span>), construyendo arquitecturas robustas y escalables listas para producción.
+                <p class="max-w-2xl text-slate-300 text-sm sm:text-base leading-relaxed mb-8 text-justify font-normal border-l-2 border-brand-accent/60 pl-4 py-1 bg-brand-card/30 rounded-r-lg">
+                    Desarrollador backend de alto impacto especializado en Python (FastAPI, PostgreSQL, SQLAlchemy). Automatizo procesos y maximizo la velocidad de desarrollo implementando <span class="text-white font-medium">agentes de Inteligencia Artificial autónomos con OpenClaw</span> y los principales agentes de codificación del mercado (<span class="text-slate-200 font-medium">Claude Code, Cursor y GitHub Copilot</span>), construyendo arquitecturas robustas y escalables listas para producción.
                 </p>
                 <div class="flex flex-wrap items-center gap-4 justify-center md:justify-start">
                     <a href="#proyectos" class="bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-semibold px-6 py-3 rounded-lg transition shadow-lg shadow-brand-accent/20">
@@ -98,25 +98,40 @@
                 <span class="text-brand-accent font-mono text-xl">01.</span> Sobre Mí
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-                <div class="md:col-span-2 space-y-4 text-slate-300 leading-relaxed text-base">
+                <div class="md:col-span-2 space-y-4 text-slate-300 leading-relaxed text-sm sm:text-base text-justify">
                     <p>
-                        Soy un desarrollador backend enfocado en el ecosistema Python que combina la solidez de la arquitectura de software con el poder de la automatización inteligente. Integro agentes de Inteligencia Artificial como <strong class="text-white">OpenClaw</strong> y asistentes avanzados de codificación (<strong class="text-white">Claude Code, Cursor y GitHub Copilot</strong>) para acelerar el ciclo de desarrollo, automatizar pruebas y desplegar microservicios eficientes.
+                        Soy <strong class="text-white">Ingeniero de Sistemas</strong> graduado de la <strong class="text-white">Universidad Piloto de Colombia</strong>, especializado en ingeniería backend con Python (FastAPI, PostgreSQL, SQLAlchemy) y automatización de procesos mediante agentes de Inteligencia Artificial.
                     </p>
                     <p>
-                        Me especializo en la lógica de negocio, persistencia de datos relacional con PostgreSQL y SQLAlchemy, migraciones controladas con Alembic y empaquetado en contenedores Docker.
+                        En el <strong class="text-white">Banco Agrario de Colombia</strong> contribuí en el área de Arquitectura TIC optimizando la infraestructura de banca virtual en cerca de un 15% y analizando indicadores de escalabilidad y alta disponibilidad. En <strong class="text-white">Social Medical Data</strong> desarrollé plataformas operativas con PostgreSQL, optimizando consultas SQL para reducir tiempos de respuesta en un 30% y acelerando la resolución de incidentes en un 40% bajo metodologías ágiles (Scrum).
                     </p>
                     <p>
-                        Mi enfoque está en entregar código predecible, seguro y listo para producción, aprovechando la inteligencia artificial para multiplicar el impacto y la velocidad técnica del equipo.
+                        Certificado en <strong class="text-brand-accent">Google AI Essentials</strong>, <strong class="text-brand-accent">OpenClaw (Agentes IA Autónomos 24/7)</strong> y <strong class="text-brand-accent">Microsoft Azure (AZ-900)</strong>, combino principios de Clean Code y buenas prácticas SOLID con agentes avanzados de codificación (Claude Code, Cursor) para construir APIs RESTful robustas, seguras y contenerizadas con Docker listas para producción.
                     </p>
                 </div>
-                <div class="bg-brand-card p-6 rounded-xl border border-brand-border">
-                    <h3 class="font-semibold text-white mb-3 text-sm tracking-wider uppercase text-brand-accent font-mono">Principios de Trabajo</h3>
-                    <ul class="space-y-2 text-sm text-slate-400">
-                        <li class="flex items-center gap-2">✔ Agentes IA & Automatización (OpenClaw)</li>
-                        <li class="flex items-center gap-2">✔ Tipado estricto con Pydantic</li>
-                        <li class="flex items-center gap-2">✔ Cobertura de tests con Pytest</li>
-                        <li class="flex items-center gap-2">✔ Migraciones con Alembic</li>
-                        <li class="flex items-center gap-2">✔ Entornos reproducibles en Docker</li>
+                <div class="bg-brand-card p-6 rounded-xl border border-brand-border shadow-lg">
+                    <h3 class="font-semibold text-white mb-3 text-sm tracking-wider uppercase text-brand-accent font-mono">Trayectoria & Credenciales</h3>
+                    <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                        <li class="flex items-start gap-2.5">
+                            <span class="text-brand-accent mt-0.5">🎓</span>
+                            <span><strong>Ingeniería de Sistemas</strong> — Universidad Piloto de Colombia</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="text-brand-accent mt-0.5">🏦</span>
+                            <span><strong>Banco Agrario de Colombia</strong> — Arquitectura TIC</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="text-brand-accent mt-0.5">🏥</span>
+                            <span><strong>Social Medical Data</strong> — Backend & Optimización SQL</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="text-brand-accent mt-0.5">🤖</span>
+                            <span><strong>OpenClaw & Google AI</strong> — Agentes IA Autónomos</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="text-brand-accent mt-0.5">☁️</span>
+                            <span><strong>Microsoft Azure</strong> — Fundamentos Cloud (AZ-900)</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -147,37 +162,53 @@
                 <span class="text-brand-accent font-mono text-xl">03.</span> Stack Tecnológico
             </h2>
             <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-4">
-                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
-                    <span class="block text-2xl mb-1">🐍</span>
-                    <span class="font-medium text-white text-sm">Python</span>
+                <!-- Python -->
+                <div class="bg-brand-card p-4 rounded-xl border border-brand-border text-center hover:border-emerald-500/50 hover:scale-105 transition duration-200 group shadow-md flex flex-col items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" class="w-10 h-10 mb-2 group-hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] transition" />
+                    <span class="font-medium text-white text-xs sm:text-sm">Python</span>
                 </div>
-                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
-                    <span class="block text-2xl mb-1">⚡</span>
-                    <span class="font-medium text-white text-sm">FastAPI</span>
+                <!-- FastAPI -->
+                <div class="bg-brand-card p-4 rounded-xl border border-brand-border text-center hover:border-emerald-500/50 hover:scale-105 transition duration-200 group shadow-md flex flex-col items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI Logo" class="w-10 h-10 mb-2 group-hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] transition" />
+                    <span class="font-medium text-white text-xs sm:text-sm">FastAPI</span>
                 </div>
-                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
-                    <span class="block text-2xl mb-1">🐘</span>
-                    <span class="font-medium text-white text-sm">PostgreSQL</span>
+                <!-- PostgreSQL -->
+                <div class="bg-brand-card p-4 rounded-xl border border-brand-border text-center hover:border-emerald-500/50 hover:scale-105 transition duration-200 group shadow-md flex flex-col items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL Logo" class="w-10 h-10 mb-2 group-hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] transition" />
+                    <span class="font-medium text-white text-xs sm:text-sm">PostgreSQL</span>
                 </div>
-                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
-                    <span class="block text-2xl mb-1">🧱</span>
-                    <span class="font-medium text-white text-sm">SQLAlchemy</span>
+                <!-- SQLAlchemy -->
+                <div class="bg-brand-card p-4 rounded-xl border border-brand-border text-center hover:border-emerald-500/50 hover:scale-105 transition duration-200 group shadow-md flex flex-col items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" alt="SQLAlchemy Logo" class="w-10 h-10 mb-2 group-hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] transition" />
+                    <span class="font-medium text-white text-xs sm:text-sm">SQLAlchemy</span>
                 </div>
-                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
-                    <span class="block text-2xl mb-1">🐳</span>
-                    <span class="font-medium text-white text-sm">Docker</span>
+                <!-- Docker -->
+                <div class="bg-brand-card p-4 rounded-xl border border-brand-border text-center hover:border-emerald-500/50 hover:scale-105 transition duration-200 group shadow-md flex flex-col items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker Logo" class="w-10 h-10 mb-2 group-hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] transition" />
+                    <span class="font-medium text-white text-xs sm:text-sm">Docker</span>
                 </div>
-                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
-                    <span class="block text-2xl mb-1">🧪</span>
-                    <span class="font-medium text-white text-sm">Pytest</span>
+                <!-- Azure -->
+                <div class="bg-brand-card p-4 rounded-xl border border-brand-border text-center hover:border-emerald-500/50 hover:scale-105 transition duration-200 group shadow-md flex flex-col items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure Logo" class="w-10 h-10 mb-2 group-hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] transition" />
+                    <span class="font-medium text-white text-xs sm:text-sm">Azure Cloud</span>
                 </div>
-                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
-                    <span class="block text-2xl mb-1">🔄</span>
-                    <span class="font-medium text-white text-sm">Git</span>
+                <!-- Pytest -->
+                <div class="bg-brand-card p-4 rounded-xl border border-brand-border text-center hover:border-emerald-500/50 hover:scale-105 transition duration-200 group shadow-md flex flex-col items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg" alt="Pytest Logo" class="w-10 h-10 mb-2 group-hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] transition" />
+                    <span class="font-medium text-white text-xs sm:text-sm">Pytest</span>
                 </div>
-                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
-                    <span class="block text-2xl mb-1">🤖</span>
-                    <span class="font-medium text-white text-sm">OpenClaw & IA</span>
+                <!-- OpenClaw & IA -->
+                <div class="bg-brand-card p-4 rounded-xl border border-brand-border text-center hover:border-emerald-500/50 hover:scale-105 transition duration-200 group shadow-md flex flex-col items-center justify-center">
+                    <div class="w-10 h-10 mb-2 flex items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.6)]">
+                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                            <circle cx="12" cy="5" r="2"></circle>
+                            <path d="M12 7v4"></path>
+                            <line x1="8" y1="16" x2="8" y2="16.01"></line>
+                            <line x1="16" y1="16" x2="16" y2="16.01"></line>
+                        </svg>
+                    </div>
+                    <span class="font-medium text-white text-xs sm:text-sm">OpenClaw & IA</span>
                 </div>
             </div>
         </div>
@@ -192,14 +223,13 @@
             Estoy en búsqueda activa de mi primera posición como desarrollador backend. Si tienes una vacante o quieres revisar mi código, escríbeme.
         </p>
         <div class="flex flex-wrap justify-center gap-4">
-            <!-- PERSONALIZAR: Reemplaza con tus enlaces reales -->
-            <a href="mailto:acamicamacho@gmail.com" class="bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-semibold px-6 py-3 rounded-lg transition">
+            <a href="mailto:acamicamacho@gmail.com" class="bg-brand-accent hover:bg-brand-accentHover text-slate-950 font-bold px-6 py-3 rounded-lg transition shadow-lg shadow-emerald-500/20">
                 Enviar Correo
             </a>
-            <a href="https://linkedin.com/in/tu-usuario" target="_blank" class="border border-brand-border hover:bg-brand-card text-white font-medium px-6 py-3 rounded-lg transition">
+            <a href="https://www.linkedin.com/in/andrés-camilo-camacho-labrador-05b034246" target="_blank" class="border border-brand-border hover:bg-brand-card hover:border-emerald-500/50 text-white font-medium px-6 py-3 rounded-lg transition">
                 LinkedIn
             </a>
-            <a href="https://github.com/acamilox" target="_blank" class="border border-brand-border hover:bg-brand-card text-white font-medium px-6 py-3 rounded-lg transition">
+            <a href="https://github.com/acamilox" target="_blank" class="border border-brand-border hover:bg-brand-card hover:border-emerald-500/50 text-white font-medium px-6 py-3 rounded-lg transition">
                 GitHub
             </a>
         </div>
