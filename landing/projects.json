@@ -1,42 +1,26 @@
 [
   {
     "id": "jwt-auth-api",
-    "icon": "🔐",
     "title": "API de Autenticación con JWT",
     "description": "API RESTful con FastAPI y PostgreSQL. Implementa registro seguro, autenticación stateless mediante JWT con expiración configurable, contraseñas hasheadas en bcrypt, RBAC (user/admin) y contenerización con Docker Compose.",
     "tags": ["FastAPI", "PostgreSQL", "JWT", "Docker", "bcrypt", "Alembic"],
-    "status": "live",
-    "repoUrl": "https://github.com/acamilox/Mis-Proyectos-Python/tree/main/API-de-Autenticacion-con-JWT",
-    "liveUrl": "#"
+    "status": "repository",
+    "repoUrl": "https://github.com/acamilox/Mis-Proyectos-Python/tree/main/API-de-Autenticacion-con-JWT"
   },
   {
     "id": "task-manager-api",
-    "icon": "📋",
     "title": "Task Manager REST API",
     "description": "API estructurada bajo el patrón por capas (models, schemas, crud, database). Incluye operaciones CRUD completas, validación estricta de esquemas Pydantic y documentación OpenAPI/Swagger.",
     "tags": ["FastAPI", "SQLAlchemy", "SQLite", "Pydantic", "Uvicorn", "Swagger"],
-    "status": "live",
-    "repoUrl": "https://github.com/acamilox/Mis-Proyectos-Python/tree/main/Task-Manager-API",
-    "liveUrl": "#"
+    "status": "repository",
+    "repoUrl": "https://github.com/acamilox/Mis-Proyectos-Python/tree/main/Task-Manager-API"
   },
   {
     "id": "url-shortener-api",
-    "icon": "⚡",
     "title": "URL Shortener API",
     "description": "Servicio de acortamiento de URLs con generación de códigos alfanuméricos únicos mediante el módulo secrets de Python. Incluye redirección HTTP 301 automática y seguimiento estadístico de visitas.",
     "tags": ["FastAPI", "SQLAlchemy", "SQLite", "Pydantic", "Python Secrets"],
-    "status": "live",
-    "repoUrl": "https://github.com/acamilox/Mis-Proyectos-Python/tree/main/URL-Shortener-API",
-    "liveUrl": "#"
-  },
-  {
-    "id": "uci-dashboard",
-    "icon": "📊",
-    "title": "Dashboard UCI Adultos 2025",
-    "description": "Plataforma de análisis de datos para unidades de cuidados intensivos, procesando métricas clínicas y optimizando la visualización de indicadores médicos y ocupación hospitalaria.",
-    "tags": ["Python", "Pandas", "Data Analytics", "Streamlit"],
-    "status": "live",
-    "repoUrl": "https://github.com/acamilox/Mis-Proyectos-Python/tree/main/Dashboard-UCI-Adultos-2025",
-    "liveUrl": "#"
+    "status": "repository",
+    "repoUrl": "https://github.com/acamilox/Mis-Proyectos-Python/tree/main/URL-Shortener-API"
   }
 ]

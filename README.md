@@ -62,14 +62,6 @@ El monorepositorio está estructurado siguiendo principios de desacoplamiento en
   * Generación de claves alfanuméricas criptográficamente seguras con el módulo `secrets` de Python.
   * Redirección HTTP 301 automática y seguimiento estadístico de clics por enlace.
 
-### 4. [Dashboard UCI Adultos 2025](https://github.com/acamilox/Mis-Proyectos-Python/tree/main/Dashboard-UCI-Adultos-2025)
-* **Objetivo:** Plataforma de análisis y visualización de indicadores clínicos hospitalarios.
-* **Stack:** `Python` `Pandas` `Data Analytics` `Streamlit`
-* **Aspectos Técnicos:**
-  * Procesamiento y agregación de datasets médicos optimizando tiempos de respuesta en consultas de ocupación.
-
----
-
 ## 🎯 Criterios de Ingeniería Aplicados
 
 * **Tipado Estricto y Validación:** Esquemas de entrada y salida tipados con Pydantic para garantizar contratos de API predecibles y autodocumentados bajo el estándar OpenAPI (Swagger UI).
