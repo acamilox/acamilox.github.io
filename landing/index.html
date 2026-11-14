@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camilo | Backend Developer Portfolio</title>
+    <title>Andrés Camilo Camacho Labrador | Backend Developer & AI Agents</title>
     <!-- Tailwind CSS por CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,11 +12,11 @@
                 extend: {
                     colors: {
                         brand: {
-                            dark: '#0f172a',
-                            card: '#1e293b',
-                            border: '#334155',
-                            accent: '#10b981',
-                            accentHover: '#059669'
+                            dark: '#08132b',         // Azul oscuro brillante de fondo
+                            card: '#0f2048',         // Azul zafiro para tarjetas y paneles
+                            border: '#1a3670',       // Borde azul contrastado
+                            accent: '#38bdf8',       // Azul eléctrico / Cyan brillante
+                            accentHover: '#0ea5e9'
                         }
                     }
                 }
@@ -24,12 +24,11 @@
         }
     </script>
 </head>
-<body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark">
+<body class="bg-brand-dark bg-gradient-to-b from-[#08132b] via-[#0a1835] to-[#060e21] text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark min-h-screen">
 
     <!-- NAVEGACIÓN -->
-    <nav class="sticky top-0 z-50 backdrop-blur-md bg-brand-dark/80 border-b border-brand-border">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="#" class="text-lg font-bold text-white tracking-tight hover:text-brand-accent transition">Andrés Camilo Camacho</a>
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-brand-dark/85 border-b border-brand-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-end">
             <div class="flex items-center space-x-6 text-sm font-medium">
                 <a href="#sobre-mi" class="hover:text-brand-accent transition">Sobre mí</a>
                 <a href="#proyectos" class="hover:text-brand-accent transition">Proyectos</a>
@@ -42,34 +41,34 @@
     <!-- HERO SECTION -->
     <header class="py-16 sm:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row items-center gap-8 md:gap-14">
-            <!-- FOTO DE PERFIL A LA IZQUIERDA -->
+            <!-- FOTO DE PERFIL A LA IZQUIERDA (MARGEN CUADRADO) -->
             <div class="flex-shrink-0">
                 <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-accent to-emerald-600 rounded-full blur opacity-30 group-hover:opacity-50 transition duration-300"></div>
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-accent to-blue-500 rounded-2xl blur opacity-35 group-hover:opacity-60 transition duration-300"></div>
                     <img 
                         src="./assets/img/perfil_linkedin.jpeg" 
-                        alt="Foto de perfil de Andrés Camilo Camacho" 
-                        class="relative w-44 h-44 sm:w-52 sm:h-52 md:w-56 md:h-56 rounded-full object-cover border-4 border-slate-700/80 shadow-2xl"
+                        alt="Foto de perfil de Andrés Camilo Camacho Labrador" 
+                        class="relative w-48 h-48 sm:w-56 sm:h-56 md:w-60 md:h-60 rounded-2xl object-cover border-4 border-brand-border shadow-2xl"
                     />
                 </div>
             </div>
 
             <!-- TEXTO A LA DERECHA -->
             <div class="text-center md:text-left flex-1">
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4">
-                    Hola, soy <span class="text-brand-accent">Camilo</span>.
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
+                    Hola, soy <span class="text-brand-accent">Andrés Camilo Camacho Labrador</span>.
                 </h1>
-                <p class="text-xl sm:text-2xl text-slate-400 font-medium mb-6">
-                    Backend Developer Junior | Python & Arquitectura de APIs
+                <p class="text-xl sm:text-2xl text-slate-300 font-medium mb-6">
+                    Backend Developer | Python, Automatización & Agentes de IA
                 </p>
-                <p class="max-w-2xl text-slate-400 text-base sm:text-lg mb-8 leading-relaxed">
-                    Construyo servicios backend eficientes, seguros y mantenibles. Enfocado en modelado de bases de datos relacionales con PostgreSQL y SQLAlchemy, autenticación robusta y diseño de APIs RESTful con FastAPI.
+                <p class="max-w-2xl text-slate-200 text-base sm:text-lg mb-8 leading-relaxed">
+                    Desarrollador backend de alto impacto especializado en Python (FastAPI, PostgreSQL, SQLAlchemy). Automatizo procesos y maximizo la velocidad de desarrollo implementando <span class="text-white font-semibold">agentes de Inteligencia Artificial autónomos</span> con <span class="text-brand-accent font-semibold">OpenClaw</span> y los principales agentes de codificación del mercado (<span class="text-sky-300 font-medium">Claude Code, Cursor y GitHub Copilot</span>), construyendo arquitecturas robustas y escalables listas para producción.
                 </p>
                 <div class="flex flex-wrap items-center gap-4 justify-center md:justify-start">
-                    <a href="#proyectos" class="bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-semibold px-6 py-3 rounded-lg transition shadow-lg shadow-brand-accent/10">
+                    <a href="#proyectos" class="bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-semibold px-6 py-3 rounded-lg transition shadow-lg shadow-brand-accent/20">
                         Ver Proyectos
                     </a>
-                    <a href="./assets/cv/cv-camilo-backend.pdf" target="_blank" class="border border-brand-border hover:bg-brand-card hover:border-slate-500 text-white font-medium px-6 py-3 rounded-lg transition inline-flex items-center gap-2">
+                    <a href="./assets/cv/cv-camilo-backend.pdf" target="_blank" class="border border-brand-border hover:bg-brand-card hover:border-slate-400 text-white font-medium px-6 py-3 rounded-lg transition inline-flex items-center gap-2">
                         <svg class="w-5 h-5 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                         </svg>
@@ -88,20 +87,20 @@
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
                 <div class="md:col-span-2 space-y-4 text-slate-300 leading-relaxed text-base">
-                    <!-- PERSONALIZAR: Edita tu historia y enfoque -->
                     <p>
-                        Soy un desarrollador enfocado en el ecosistema backend con Python. Mi objetivo es escribir código limpio, predecible y respaldado por pruebas automatizadas con Pytest.
+                        Soy un desarrollador backend enfocado en el ecosistema Python que combina la solidez de la arquitectura de software con el poder de la automatización inteligente. Integro agentes de Inteligencia Artificial como <strong class="text-white">OpenClaw</strong> y asistentes avanzados de codificación (<strong class="text-white">Claude Code, Cursor y GitHub Copilot</strong>) para acelerar el ciclo de desarrollo, automatizar pruebas y desplegar microservicios eficientes.
                     </p>
                     <p>
-                        No construyo interfaces frontend complejas; me especializo en la lógica de negocio, persistencia de datos relacional con PostgreSQL y SQLAlchemy síncrono, migraciones controladas con Alembic y empaquetado mediante Docker.
+                        Me especializo en la lógica de negocio, persistencia de datos relacional con PostgreSQL y SQLAlchemy, migraciones controladas con Alembic y empaquetado en contenedores Docker.
                     </p>
                     <p>
-                        Busco unirme a un equipo técnico donde pueda colaborar en el ciclo de vida del backend, aprender de ingenieros senior y entregar valor continuo en producción.
+                        Mi enfoque está en entregar código predecible, seguro y listo para producción, aprovechando la inteligencia artificial para multiplicar el impacto y la velocidad técnica del equipo.
                     </p>
                 </div>
                 <div class="bg-brand-card p-6 rounded-xl border border-brand-border">
                     <h3 class="font-semibold text-white mb-3 text-sm tracking-wider uppercase text-brand-accent font-mono">Principios de Trabajo</h3>
                     <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex items-center gap-2">✔ Agentes IA & Automatización (OpenClaw)</li>
                         <li class="flex items-center gap-2">✔ Tipado estricto con Pydantic</li>
                         <li class="flex items-center gap-2">✔ Cobertura de tests con Pytest</li>
                         <li class="flex items-center gap-2">✔ Migraciones con Alembic</li>
@@ -135,7 +134,7 @@
             <h2 class="text-2xl sm:text-3xl font-bold text-white mb-8 flex items-center gap-3">
                 <span class="text-brand-accent font-mono text-xl">03.</span> Stack Tecnológico
             </h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4">
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-4">
                 <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
                     <span class="block text-2xl mb-1">🐍</span>
                     <span class="font-medium text-white text-sm">Python</span>
@@ -163,6 +162,10 @@
                 <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
                     <span class="block text-2xl mb-1">🔄</span>
                     <span class="font-medium text-white text-sm">Git</span>
+                </div>
+                <div class="bg-brand-card p-4 rounded-lg border border-brand-border text-center">
+                    <span class="block text-2xl mb-1">🤖</span>
+                    <span class="font-medium text-white text-sm">OpenClaw & IA</span>
                 </div>
             </div>
         </div>
