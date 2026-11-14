@@ -1,4 +1,4 @@
-# 🚀 Portafolio Backend (Python)
+# Bienvenido a mi Portafolio Junior Backend (Python)
 
 Bienvenido a la estructura principal de mi portafolio profesional. Este repositorio alberga tanto la **landing page** estática de presentación para reclutadores como el código fuente de los microservicios backend desarrollados con **FastAPI**, **PostgreSQL** y **SQLAlchemy**.
 
