@@ -12,11 +12,11 @@
                 extend: {
                     colors: {
                         brand: {
-                            dark: '#08132b',         // Azul oscuro brillante de fondo
-                            card: '#0f2048',         // Azul zafiro para tarjetas y paneles
-                            border: '#1a3670',       // Borde azul contrastado
-                            accent: '#38bdf8',       // Azul eléctrico / Cyan brillante
-                            accentHover: '#0ea5e9'
+                            dark: '#07080a',         // Negro programador / terminal profundo
+                            card: '#0f1115',         // Negro carbón para tarjetas e interfaces
+                            border: '#1e222b',       // Borde de editor de código
+                            accent: '#10b981',       // Verde esmeralda terminal hacker
+                            accentHover: '#059669'
                         }
                     }
                 }
@@ -24,16 +24,28 @@
         }
     </script>
 </head>
-<body class="bg-brand-dark bg-gradient-to-b from-[#08132b] via-[#0a1835] to-[#060e21] text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark min-h-screen">
+<body class="bg-brand-dark bg-gradient-to-b from-[#07080a] via-[#0b0c10] to-[#050507] text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-black min-h-screen">
 
     <!-- NAVEGACIÓN -->
-    <nav class="sticky top-0 z-50 backdrop-blur-md bg-brand-dark/85 border-b border-brand-border">
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-brand-dark/90 border-b border-brand-border">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-end">
-            <div class="flex items-center space-x-6 text-sm font-medium">
-                <a href="#sobre-mi" class="hover:text-brand-accent transition">Sobre mí</a>
-                <a href="#proyectos" class="hover:text-brand-accent transition">Proyectos</a>
-                <a href="#stack" class="hover:text-brand-accent transition">Stack</a>
-                <a href="#contacto" class="hover:text-brand-accent transition">Contacto</a>
+            <div class="flex items-center space-x-1.5 sm:space-x-3 text-sm font-medium">
+                <a href="#sobre-mi" class="px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-500/40 border border-transparent transition-all duration-200 flex items-center gap-1.5 group">
+                    <span class="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-emerald-400 group-hover:shadow-[0_0_8px_#10b981] transition-all duration-200"></span>
+                    Sobre mí
+                </a>
+                <a href="#proyectos" class="px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-500/40 border border-transparent transition-all duration-200 flex items-center gap-1.5 group">
+                    <span class="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-emerald-400 group-hover:shadow-[0_0_8px_#10b981] transition-all duration-200"></span>
+                    Proyectos
+                </a>
+                <a href="#stack" class="px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-500/40 border border-transparent transition-all duration-200 flex items-center gap-1.5 group">
+                    <span class="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-emerald-400 group-hover:shadow-[0_0_8px_#10b981] transition-all duration-200"></span>
+                    Stack
+                </a>
+                <a href="#contacto" class="px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-500/40 border border-transparent transition-all duration-200 flex items-center gap-1.5 group">
+                    <span class="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-emerald-400 group-hover:shadow-[0_0_8px_#10b981] transition-all duration-200"></span>
+                    Contacto
+                </a>
             </div>
         </div>
     </nav>
@@ -44,7 +56,7 @@
             <!-- FOTO DE PERFIL A LA IZQUIERDA (MARGEN CUADRADO) -->
             <div class="flex-shrink-0">
                 <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-accent to-blue-500 rounded-2xl blur opacity-35 group-hover:opacity-60 transition duration-300"></div>
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-accent to-green-600 rounded-2xl blur opacity-30 group-hover:opacity-55 transition duration-300"></div>
                     <img 
                         src="./assets/img/perfil_linkedin.jpeg" 
                         alt="Foto de perfil de Andrés Camilo Camacho Labrador" 
@@ -54,9 +66,9 @@
             </div>
 
             <!-- TEXTO A LA DERECHA -->
-            <div class="text-center md:text-left flex-1">
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
-                    Hola, soy <span class="text-brand-accent">Andrés Camilo Camacho Labrador</span>.
+            <div class="text-center md:text-left flex-1 min-w-0">
+                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[2.65rem] font-extrabold text-white tracking-tight mb-4 leading-tight whitespace-nowrap overflow-x-auto">
+                    Hola, soy <span class="text-brand-accent">Andrés Camilo Camacho Labrador</span>
                 </h1>
                 <p class="text-xl sm:text-2xl text-slate-300 font-medium mb-6">
                     Backend Developer | Python, Automatización & Agentes de IA
@@ -195,7 +207,7 @@
 
     <!-- FOOTER -->
     <footer class="py-8 border-t border-brand-border text-center text-xs text-slate-500 font-mono">
-        <p>© 2026 Camilo. Portafolio Backend alojado en GitHub Pages.</p>
+        <p>© 2026 Andrés Camilo Camacho Labrador. Portafolio Backend alojado en GitHub Pages.</p>
     </footer>
 
     <!-- SCRIPT DE RENDERIZADO DINÁMICO DE PROYECTOS -->
@@ -218,16 +230,16 @@
 
                     // Botón Código: Si tiene link válido es enlace, si no es botón deshabilitado explícito
                     const codeBtn = (proj.repoUrl && proj.repoUrl !== "#")
-                        ? `<a href="${proj.repoUrl}" target="_blank" class="text-xs font-semibold px-3 py-2 rounded bg-slate-800 hover:bg-slate-700 text-white transition text-center flex-1">Ver Código</a>`
-                        : `<span class="text-xs font-medium px-3 py-2 rounded bg-slate-800/40 border border-slate-700/50 text-slate-500 cursor-not-allowed select-none text-center flex-1">Código: Próximamente</span>`;
+                        ? `<a href="${proj.repoUrl}" target="_blank" class="text-xs font-semibold px-3 py-2 rounded bg-slate-900 hover:bg-slate-800 text-white transition text-center flex-1 border border-brand-border hover:border-emerald-500/40">Ver Código</a>`
+                        : `<span class="text-xs font-medium px-3 py-2 rounded bg-slate-900/40 border border-slate-800/80 text-slate-500 cursor-not-allowed select-none text-center flex-1">Código: Próximamente</span>`;
 
                     // Botón API en Vivo: Si tiene link válido es enlace, si no es botón deshabilitado explícito
                     const liveBtn = (proj.liveUrl && proj.liveUrl !== "#")
-                        ? `<a href="${proj.liveUrl}" target="_blank" class="text-xs font-semibold px-3 py-2 rounded bg-brand-accent hover:bg-brand-accentHover text-brand-dark transition text-center flex-1">Swagger UI</a>`
-                        : `<span class="text-xs font-medium px-3 py-2 rounded bg-slate-800/40 border border-slate-700/50 text-slate-500 cursor-not-allowed select-none text-center flex-1">API: Próximamente</span>`;
+                        ? `<a href="${proj.liveUrl}" target="_blank" class="text-xs font-semibold px-3 py-2 rounded bg-brand-accent hover:bg-brand-accentHover text-slate-950 font-bold transition text-center flex-1 shadow-md shadow-emerald-500/20">Swagger UI</a>`
+                        : `<span class="text-xs font-medium px-3 py-2 rounded bg-slate-900/40 border border-slate-800/80 text-slate-500 cursor-not-allowed select-none text-center flex-1">API: Próximamente</span>`;
 
                     return `
-                        <div class="bg-brand-card border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:border-slate-500 transition shadow-lg">
+                        <div class="bg-brand-card border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:border-emerald-500/50 hover:shadow-[0_0_20px_rgba(16,185,129,0.07)] transition-all duration-300">
                             <div>
                                 <div class="flex items-center justify-between mb-4">
                                     <span class="text-2xl">${proj.icon || '📦'}</span>
@@ -236,7 +248,7 @@
                                 <h3 class="text-lg font-bold text-white mb-2">${proj.title}</h3>
                                 <p class="text-slate-400 text-sm mb-4 leading-relaxed">${proj.description}</p>
                                 <div class="flex flex-wrap gap-1.5 mb-6">
-                                    ${proj.tags.map(t => `<span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-900 text-slate-300 border border-slate-800">${t}</span>`).join('')}
+                                    ${proj.tags.map(t => `<span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-950 text-slate-300 border border-slate-800">${t}</span>`).join('')}
                                 </div>
                             </div>
                             <div class="flex gap-2 pt-4 border-t border-brand-border/60">
