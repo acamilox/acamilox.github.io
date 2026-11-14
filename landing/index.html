@@ -29,7 +29,7 @@
     <!-- NAVEGACIÓN -->
     <nav class="sticky top-0 z-50 backdrop-blur-md bg-brand-dark/80 border-b border-brand-border">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <span class="font-mono text-lg font-bold tracking-tight text-brand-accent">&lt;camilo.dev /&gt;</span>
+            <a href="#" class="text-lg font-bold text-white tracking-tight hover:text-brand-accent transition">Andrés Camilo Camacho</a>
             <div class="flex items-center space-x-6 text-sm font-medium">
                 <a href="#sobre-mi" class="hover:text-brand-accent transition">Sobre mí</a>
                 <a href="#proyectos" class="hover:text-brand-accent transition">Proyectos</a>
@@ -40,34 +40,43 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <header class="py-20 sm:py-28 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-brand-accent/10 text-brand-accent border border-brand-accent/20 mb-6">
-            <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
-            Disponible para oportunidades laborales
-        </div>
-        <!-- PERSONALIZAR: Cambia tu nombre y descripción -->
-        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-4">
-            Hola, soy <span class="text-brand-accent">Camilo</span>.
-        </h1>
-        <p class="text-xl sm:text-2xl text-slate-400 font-medium mb-6">
-            Backend Developer Junior | Python & Arquitectura de APIs
-        </p>
-        <p class="max-w-2xl text-slate-400 text-base sm:text-lg mb-8 leading-relaxed">
-            Construyo servicios backend eficientes, seguros y mantenibles. Enfocado en modelado de bases de datos relacionales con PostgreSQL y SQLAlchemy, autenticación robusta y diseño de APIs RESTful con FastAPI.
-        </p>
-        <div class="flex flex-wrap items-center gap-4 justify-center sm:justify-start">
-            <a href="#proyectos" class="bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-semibold px-6 py-3 rounded-lg transition shadow-lg shadow-brand-accent/10">
-                Ver Proyectos
-            </a>
-            <!-- BOTÓN CV TEMPORALMENTE DESHABILITADO (Recomendado hasta tener el PDF real) -->
-            <!-- Cuando coloques tu PDF en ./assets/cv/cv-camilo-backend.pdf, reemplaza este <span> por el <a>:
-            <a href="./assets/cv/cv-camilo-backend.pdf" target="_blank" class="border border-brand-border hover:bg-brand-card text-white font-medium px-6 py-3 rounded-lg transition">
-                Descargar CV
-            </a>
-            -->
-            <span class="border border-brand-border/60 bg-brand-card/40 text-slate-500 font-medium px-6 py-3 rounded-lg cursor-not-allowed select-none text-sm inline-flex items-center">
-                CV: Próximamente
-            </span>
+    <header class="py-16 sm:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-14">
+            <!-- FOTO DE PERFIL A LA IZQUIERDA -->
+            <div class="flex-shrink-0">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-accent to-emerald-600 rounded-full blur opacity-30 group-hover:opacity-50 transition duration-300"></div>
+                    <img 
+                        src="./assets/img/perfil_linkedin.jpeg" 
+                        alt="Foto de perfil de Andrés Camilo Camacho" 
+                        class="relative w-44 h-44 sm:w-52 sm:h-52 md:w-56 md:h-56 rounded-full object-cover border-4 border-slate-700/80 shadow-2xl"
+                    />
+                </div>
+            </div>
+
+            <!-- TEXTO A LA DERECHA -->
+            <div class="text-center md:text-left flex-1">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4">
+                    Hola, soy <span class="text-brand-accent">Camilo</span>.
+                </h1>
+                <p class="text-xl sm:text-2xl text-slate-400 font-medium mb-6">
+                    Backend Developer Junior | Python & Arquitectura de APIs
+                </p>
+                <p class="max-w-2xl text-slate-400 text-base sm:text-lg mb-8 leading-relaxed">
+                    Construyo servicios backend eficientes, seguros y mantenibles. Enfocado en modelado de bases de datos relacionales con PostgreSQL y SQLAlchemy, autenticación robusta y diseño de APIs RESTful con FastAPI.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 justify-center md:justify-start">
+                    <a href="#proyectos" class="bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-semibold px-6 py-3 rounded-lg transition shadow-lg shadow-brand-accent/10">
+                        Ver Proyectos
+                    </a>
+                    <a href="./assets/cv/cv-camilo-backend.pdf" target="_blank" class="border border-brand-border hover:bg-brand-card hover:border-slate-500 text-white font-medium px-6 py-3 rounded-lg transition inline-flex items-center gap-2">
+                        <svg class="w-5 h-5 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        Visualizar mi Hoja de Vida
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
