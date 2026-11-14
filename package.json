@@ -1,0 +1,11 @@
+{
+  "name": "acamilox-portfolio",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./landing/assets/css/input.css -o ./landing/assets/css/styles.css --minify",
+    "build": "npm run build:css"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}

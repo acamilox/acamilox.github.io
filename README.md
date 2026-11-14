@@ -38,6 +38,19 @@ El monorepositorio está estructurado siguiendo principios de desacoplamiento en
 
 ---
 
+## 🚀 Desarrollo del Portafolio
+
+La landing se publica como sitio estático en GitHub Pages. Tailwind se compila antes del despliegue, por lo que para previsualizar los estilos localmente ejecuta:
+
+```bash
+npm install
+npm run build
+```
+
+El CSS generado se guarda en `landing/assets/css/styles.css`. La automatización de GitHub Actions ejecuta este mismo proceso antes de publicar el sitio.
+
+---
+
 ## 🧩 Proyectos Backend Destacados
 
 ### 1. [API de Autenticación con JWT](https://github.com/acamilox/Mis-Proyectos-Python/tree/main/API-de-Autenticacion-con-JWT)

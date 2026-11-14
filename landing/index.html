@@ -17,32 +17,24 @@
     <meta name="twitter:title" content="Andrés Camilo Camacho Labrador | Backend Developer">
     <meta name="twitter:description" content="Ingeniero de Sistemas especializado en Python (FastAPI, PostgreSQL) y automatización con agentes de IA.">
     <meta name="twitter:image" content="https://acamilox.github.io/assets/img/perfil_linkedin.jpeg">
-    <!-- Tailwind CSS por CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            dark: '#07080a',         // Negro programador / terminal profundo
-                            card: '#0f1115',         // Negro carbón para tarjetas e interfaces
-                            border: '#1e222b',       // Borde de editor de código
-                            accent: '#10b981',       // Verde esmeralda terminal hacker
-                            accentHover: '#059669'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body class="bg-brand-dark bg-gradient-to-b from-[#07080a] via-[#0b0c10] to-[#050507] text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-black min-h-screen">
 
+    <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-brand-accent focus:px-4 focus:py-2 focus:font-semibold focus:text-brand-dark">
+        Saltar al contenido principal
+    </a>
+
     <!-- NAVEGACIÓN -->
     <nav class="sticky top-0 z-50 backdrop-blur-md bg-brand-dark/90 border-b border-brand-border">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-end">
-            <div class="flex items-center space-x-4 sm:space-x-8 text-sm font-medium">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#contenido" class="font-mono font-bold text-sm text-brand-accent tracking-tight">ACC</a>
+            <button id="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden rounded-lg border border-brand-border p-2 text-slate-200 hover:border-emerald-500 hover:text-emerald-400" aria-label="Abrir menú de navegación">
+                <svg class="h-5 w-5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div class="hidden md:flex md:items-center md:space-x-8 text-sm font-medium">
                 <a href="#sobre-mi" class="relative py-2 text-slate-300 hover:text-emerald-400 transition-colors duration-200 group">
                     Sobre mí
                     <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-emerald-400 shadow-[0_0_8px_#10b981] group-hover:w-full transition-all duration-300"></span>
@@ -69,8 +61,19 @@
                 </a>
             </div>
         </div>
+        <div id="mobile-menu" class="hidden border-t border-brand-border px-4 py-3 md:hidden">
+            <div class="grid grid-cols-2 gap-2 text-sm font-medium">
+                <a href="#sobre-mi" class="rounded-md px-3 py-2 text-slate-300 hover:bg-brand-card hover:text-emerald-400">Sobre mí</a>
+                <a href="#experiencia" class="rounded-md px-3 py-2 text-slate-300 hover:bg-brand-card hover:text-emerald-400">Experiencia</a>
+                <a href="#proyectos" class="rounded-md px-3 py-2 text-slate-300 hover:bg-brand-card hover:text-emerald-400">Proyectos</a>
+                <a href="#stack" class="rounded-md px-3 py-2 text-slate-300 hover:bg-brand-card hover:text-emerald-400">Stack</a>
+                <a href="#formacion" class="rounded-md px-3 py-2 text-slate-300 hover:bg-brand-card hover:text-emerald-400">Formación</a>
+                <a href="#contacto" class="rounded-md px-3 py-2 text-slate-300 hover:bg-brand-card hover:text-emerald-400">Contacto</a>
+            </div>
+        </div>
     </nav>
 
+    <main id="contenido">
     <!-- HERO SECTION -->
     <header class="py-16 sm:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row items-center gap-8 md:gap-14">
@@ -101,7 +104,7 @@
                     <a href="#proyectos" class="bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-semibold px-6 py-3 rounded-lg transition shadow-lg shadow-brand-accent/20">
                         Ver Proyectos
                     </a>
-                    <a href="./assets/cv/cv-camilo-backend.pdf" target="_blank" class="border border-brand-border hover:bg-brand-card hover:border-slate-400 text-white font-medium px-6 py-3 rounded-lg transition inline-flex items-center gap-2">
+                    <a href="./assets/cv/cv-camilo-backend.pdf" target="_blank" rel="noopener noreferrer" class="border border-brand-border hover:bg-brand-card hover:border-slate-400 text-white font-medium px-6 py-3 rounded-lg transition inline-flex items-center gap-2">
                         <svg class="w-5 h-5 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                         </svg>
@@ -381,7 +384,7 @@
                 Enviar Correo
             </a>
             <!-- Copiar Correo con Toast -->
-            <button onclick="copyEmail()" class="border border-brand-border hover:bg-brand-card hover:border-emerald-500/50 text-slate-200 font-medium px-4 py-3 rounded-lg transition inline-flex items-center gap-2 group cursor-pointer text-sm sm:text-base">
+            <button id="copy-email" type="button" class="border border-brand-border hover:bg-brand-card hover:border-emerald-500/50 text-slate-200 font-medium px-4 py-3 rounded-lg transition inline-flex items-center gap-2 group cursor-pointer text-sm sm:text-base">
                 <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke-width="2"></rect>
                     <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke-width="2"></path>
@@ -389,22 +392,23 @@
                 <span id="copy-text">Copiar</span>
             </button>
             <!-- WhatsApp Directo -->
-            <a href="https://wa.me/573016539723?text=Hola%20Andr%C3%A9s,%20vi%20tu%20portafolio%20backend%20y%20me%20gustar%C3%ADa%20conversar" target="_blank" class="border border-emerald-500/40 hover:bg-emerald-500/10 text-emerald-400 font-medium px-5 py-3 rounded-lg transition inline-flex items-center gap-2 shadow-lg shadow-emerald-500/10 text-sm sm:text-base">
+            <a href="https://wa.me/573016539723?text=Hola%20Andr%C3%A9s,%20vi%20tu%20portafolio%20backend%20y%20me%20gustar%C3%ADa%20conversar" target="_blank" rel="noopener noreferrer" class="border border-emerald-500/40 hover:bg-emerald-500/10 text-emerald-400 font-medium px-5 py-3 rounded-lg transition inline-flex items-center gap-2 shadow-lg shadow-emerald-500/10 text-sm sm:text-base">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.586 1.771.899 2.796.9 3.181 0 5.767-2.587 5.768-5.766.001-3.182-2.585-5.787-5.768-5.787zm3.387 8.214c-.144.405-.837.774-1.17.824-.312.045-.634.044-.99-.076-.238-.082-.544-.199-.957-.378-1.761-.762-2.906-2.536-2.994-2.653-.088-.117-.714-.951-.714-1.815 0-.864.453-1.289.614-1.464.162-.175.353-.219.47-.219.118 0 .235.001.338.006.109.005.255-.041.399.305.15.359.508 1.242.552 1.333.044.091.073.197.015.313-.059.117-.088.19-.176.293-.088.102-.185.228-.264.307-.088.088-.18.185-.077.361.103.175.459.757.985 1.226.678.605 1.249.792 1.425.88.176.088.279.073.382-.044.103-.117.44-.513.558-.688.117-.175.235-.146.396-.088.162.059 1.026.484 1.202.572.176.088.293.132.338.205.044.074.044.428-.1.833z"></path>
                 </svg>
                 WhatsApp
             </a>
             <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/andrés-camilo-camacho-labrador-05b034246" target="_blank" class="border border-brand-border hover:bg-brand-card hover:border-emerald-500/50 text-white font-medium px-5 py-3 rounded-lg transition inline-flex items-center gap-2 text-sm sm:text-base">
+            <a href="https://www.linkedin.com/in/andrés-camilo-camacho-labrador-05b034246" target="_blank" rel="noopener noreferrer" class="border border-brand-border hover:bg-brand-card hover:border-emerald-500/50 text-white font-medium px-5 py-3 rounded-lg transition inline-flex items-center gap-2 text-sm sm:text-base">
                 LinkedIn
             </a>
             <!-- GitHub -->
-            <a href="https://github.com/acamilox" target="_blank" class="border border-brand-border hover:bg-brand-card hover:border-emerald-500/50 text-white font-medium px-5 py-3 rounded-lg transition inline-flex items-center gap-2 text-sm sm:text-base">
+            <a href="https://github.com/acamilox" target="_blank" rel="noopener noreferrer" class="border border-brand-border hover:bg-brand-card hover:border-emerald-500/50 text-white font-medium px-5 py-3 rounded-lg transition inline-flex items-center gap-2 text-sm sm:text-base">
                 GitHub
             </a>
         </div>
     </section>
+    </main>
 
     <!-- TOAST NOTIFICACIÓN -->
     <div id="toast" class="fixed bottom-6 right-6 transform translate-y-24 opacity-0 bg-emerald-500 text-slate-950 font-bold px-4 py-2.5 rounded-lg shadow-2xl text-sm transition-all duration-300 pointer-events-none z-50 flex items-center gap-2">
@@ -416,72 +420,6 @@
         <p>© 2026 Andrés Camilo Camacho Labrador. Portafolio Backend alojado en GitHub Pages.</p>
     </footer>
 
-    <!-- SCRIPT DE RENDERIZADO DINÁMICO DE PROYECTOS -->
-    <script>
-        document.addEventListener("DOMContentLoaded", async () => {
-            const grid = document.getElementById("projects-grid");
-            try {
-                const response = await fetch("projects.json");
-                const projects = await response.json();
-
-                grid.innerHTML = projects.map(proj => {
-                    const isAvailable = proj.status === "live";
-                    const isDev = proj.status === "in_progress";
-                    const isRepository = proj.status === "repository";
-                    
-                    const statusBadge = isAvailable
-                        ? `<span class="px-2.5 py-0.5 rounded text-xs font-mono font-medium bg-emerald-950/80 text-emerald-400 border border-emerald-800">En Vivo</span>`
-                        : (isDev 
-                            ? `<span class="px-2.5 py-0.5 rounded text-xs font-mono font-medium bg-amber-950/80 text-amber-400 border border-amber-800">En Desarrollo</span>`
-                            : (isRepository
-                                ? `<span class="px-2.5 py-0.5 rounded text-xs font-mono font-medium bg-sky-950/80 text-sky-300 border border-sky-800">Código disponible</span>`
-                                : `<span class="px-2.5 py-0.5 rounded text-xs font-mono font-medium bg-slate-800 text-slate-400 border border-slate-700">Próximamente</span>`));
-
-                    // Botón Código: Si tiene link válido es enlace, si no es botón deshabilitado explícito
-                    const codeBtn = (proj.repoUrl && proj.repoUrl !== "#")
-                        ? `<a href="${proj.repoUrl}" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-3 py-2 rounded bg-slate-900 hover:bg-slate-800 text-white transition text-center flex-1 border border-brand-border hover:border-emerald-500/40">Ver Código</a>`
-                        : `<span class="text-xs font-medium px-3 py-2 rounded bg-slate-900/40 border border-slate-800/80 text-slate-500 cursor-not-allowed select-none text-center flex-1">Código: Próximamente</span>`;
-
-                    return `
-                        <div class="bg-brand-card border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:border-emerald-500/50 hover:shadow-[0_0_20px_rgba(16,185,129,0.07)] transition-all duration-300">
-                            <div>
-                                <div class="flex justify-end mb-4">
-                                    ${statusBadge}
-                                </div>
-                                <h3 class="text-lg font-bold text-white mb-2">${proj.title}</h3>
-                                <p class="text-slate-400 text-sm mb-4 leading-relaxed">${proj.description}</p>
-                                <div class="flex flex-wrap gap-1.5 mb-6">
-                                    ${proj.tags.map(t => `<span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-950 text-slate-300 border border-slate-800">${t}</span>`).join('')}
-                                </div>
-                            </div>
-                            <div class="flex gap-2 pt-4 border-t border-brand-border/60">
-                                ${codeBtn}
-                            </div>
-                        </div>
-                    `;
-                }).join('');
-            } catch (err) {
-                console.error("Error al cargar projects.json:", err);
-                grid.innerHTML = `<p class="text-red-400 text-sm col-span-full">Error al cargar la lista de proyectos.</p>`;
-            }
-        });
-
-        function copyEmail() {
-            navigator.clipboard.writeText("acamicamacho@gmail.com").then(() => {
-                const toast = document.getElementById("toast");
-                toast.classList.remove("translate-y-24", "opacity-0");
-                toast.classList.add("translate-y-0", "opacity-100");
-                const copyText = document.getElementById("copy-text");
-                if (copyText) copyText.innerText = "¡Copiado!";
-                setTimeout(() => {
-                    toast.classList.remove("translate-y-0", "opacity-100");
-                    toast.classList.add("translate-y-24", "opacity-0");
-                    if (copyText) copyText.innerText = "Copiar";
-                }, 2500);
-            }).catch(err => {
-                console.error("No se pudo copiar el correo:", err);
-            });
-        }
-    </script>
+    <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
