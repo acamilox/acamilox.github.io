@@ -40,24 +40,33 @@ El monorepositorio está estructurado siguiendo principios de desacoplamiento en
 
 ## 🧩 Proyectos Backend Destacados
 
-### 1. [IAM Auth Microservice](https://github.com/acamilox) *(En Desarrollo)*
-* **Objetivo:** Servicio centralizado de identidad y acceso con seguridad robusta.
+### 1. [API de Autenticación con JWT](https://github.com/acamilox/Mis-Proyectos-Python/tree/main/API-de-Autenticacion-con-JWT)
+* **Objetivo:** Microservicio de autenticación y autorización stateless listo para producción.
+* **Stack:** `FastAPI` `PostgreSQL` `JWT` `Docker Compose` `bcrypt` `Alembic`
 * **Aspectos Técnicos:**
-  * Autenticación stateless mediante JSON Web Tokens (JWT).
-  * Rotación estricta de Refresh Tokens con detección de reuso para mitigar secuestro de sesión.
-  * Control de acceso basado en roles (RBAC) y hashing de contraseñas con algoritmos modernos (Argon2 / bcrypt).
+  * Emisión de tokens JWT con expiración configurable y roles de usuario (`user` / `admin`).
+  * Encriptación segura de contraseñas con `bcrypt` y validación tipada con esquemas Pydantic.
+  * Despliegue contenerizado y reproducible mediante Docker y Docker Compose.
 
-### 2. Concurrency-Safe Order & Inventory Engine *(Próximamente)*
-* **Objetivo:** Motor de compras transaccional resistente a altas cargas y peticiones simultáneas.
+### 2. [Task Manager REST API](https://github.com/acamilox/Mis-Proyectos-Python/tree/main/Task-Manager-API)
+* **Objetivo:** API modular para gestión de tareas implementando arquitectura en capas.
+* **Stack:** `FastAPI` `SQLAlchemy` `SQLite` `Pydantic` `Uvicorn`
 * **Aspectos Técnicos:**
-  * Control de concurrencia pesimista en PostgreSQL (`SELECT FOR UPDATE`) para erradicar condiciones de carrera en stock (overselling).
-  * Garantía de transacciones ACID en la confirmación de pedidos.
+  * Separación estricta de responsabilidades (`models`, `schemas`, `crud`, `database`).
+  * Operaciones CRUD completas con relaciones de base de datos y documentación OpenAPI/Swagger automática.
 
-### 3. Analytics Streaming API *(Próximamente)*
-* **Objetivo:** Ingesta y agregación de métricas de alto volumen con exportación eficiente de datos.
+### 3. [URL Shortener API](https://github.com/acamilox/Mis-Proyectos-Python/tree/main/URL-Shortener-API)
+* **Objetivo:** Servicio de acortamiento de URLs con analítica de redirecciones.
+* **Stack:** `FastAPI` `SQLAlchemy` `SQLite` `Pydantic` `Python Secrets`
 * **Aspectos Técnicos:**
-  * Descargas de reportes masivos mediante respuestas en streaming (`StreamingResponse` de FastAPI) con uso constante de memoria RAM.
-  * Modelado relacional indexado y optimizado con análisis de planes de ejecución (`EXPLAIN ANALYZE`).
+  * Generación de claves alfanuméricas criptográficamente seguras con el módulo `secrets` de Python.
+  * Redirección HTTP 301 automática y seguimiento estadístico de clics por enlace.
+
+### 4. [Dashboard UCI Adultos 2025](https://github.com/acamilox/Mis-Proyectos-Python/tree/main/Dashboard-UCI-Adultos-2025)
+* **Objetivo:** Plataforma de análisis y visualización de indicadores clínicos hospitalarios.
+* **Stack:** `Python` `Pandas` `Data Analytics` `Streamlit`
+* **Aspectos Técnicos:**
+  * Procesamiento y agregación de datasets médicos optimizando tiempos de respuesta en consultas de ocupación.
 
 ---
 

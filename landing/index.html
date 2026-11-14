@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrés Camilo Camacho Labrador | Backend Developer & AI Agents</title>
+    <!-- Favicon SVG Terminal -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2307080a'/%3E%3Cpath d='M7 11l6 5-6 5M16 21h9' stroke='%2310b981' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    <!-- Meta Tags SEO & Open Graph (Social Cards para LinkedIn/WhatsApp) -->
+    <meta name="description" content="Andrés Camilo Camacho Labrador | Ingeniero de Sistemas y Desarrollador Backend especializado en Python, FastAPI, PostgreSQL y Agentes de IA autónomos (OpenClaw).">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://acamilox.github.io/">
+    <meta property="og:title" content="Andrés Camilo Camacho Labrador | Backend Developer & AI Agents">
+    <meta property="og:description" content="Ingeniero de Sistemas especializado en Python (FastAPI, PostgreSQL, SQLAlchemy) y automatización con agentes de IA autónomos (OpenClaw, Claude Code).">
+    <meta property="og:image" content="https://acamilox.github.io/assets/img/perfil_linkedin.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Andrés Camilo Camacho Labrador | Backend Developer">
+    <meta name="twitter:description" content="Ingeniero de Sistemas especializado en Python (FastAPI, PostgreSQL) y automatización con agentes de IA.">
+    <meta name="twitter:image" content="https://acamilox.github.io/assets/img/perfil_linkedin.jpeg">
     <!-- Tailwind CSS por CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -29,9 +42,13 @@
     <!-- NAVEGACIÓN -->
     <nav class="sticky top-0 z-50 backdrop-blur-md bg-brand-dark/90 border-b border-brand-border">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-end">
-            <div class="flex items-center space-x-6 sm:space-x-8 text-sm font-medium">
+            <div class="flex items-center space-x-4 sm:space-x-8 text-sm font-medium">
                 <a href="#sobre-mi" class="relative py-2 text-slate-300 hover:text-emerald-400 transition-colors duration-200 group">
                     Sobre mí
+                    <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-emerald-400 shadow-[0_0_8px_#10b981] group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#experiencia" class="relative py-2 text-slate-300 hover:text-emerald-400 transition-colors duration-200 group">
+                    Experiencia
                     <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-emerald-400 shadow-[0_0_8px_#10b981] group-hover:w-full transition-all duration-300"></span>
                 </a>
                 <a href="#proyectos" class="relative py-2 text-slate-300 hover:text-emerald-400 transition-colors duration-200 group">
@@ -138,12 +155,59 @@
         </div>
     </section>
 
+    <!-- EXPERIENCIA LABORAL -->
+    <section id="experiencia" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-10">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+                <span class="text-brand-accent font-mono text-xl">02.</span> Experiencia Laboral
+            </h2>
+            <p class="text-slate-400 text-sm mt-1">Impacto técnico y optimización de sistemas en entornos corporativos reales.</p>
+        </div>
+
+        <div class="space-y-6">
+            <!-- Social Medical Data -->
+            <div class="bg-brand-card border border-brand-border rounded-xl p-6 hover:border-emerald-500/40 hover:shadow-[0_0_20px_rgba(16,185,129,0.06)] transition duration-300">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Ingeniero de Soporte y Desarrollo</h3>
+                        <p class="text-emerald-400 text-sm font-medium">Social Medical Data · Bogotá, Colombia</p>
+                    </div>
+                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-slate-900 text-slate-300 border border-slate-800 self-start sm:self-auto">
+                        Dic 2024 — Jun 2026
+                    </span>
+                </div>
+                <ul class="space-y-2 text-sm text-slate-300 list-disc list-inside">
+                    <li>Desarrollo de plataforma web interna con backend integrado a base de datos PostgreSQL, procesando 35 tickets diarios con cerca del 92% de resolución en primera línea.</li>
+                    <li>Optimización de consultas SQL y reestructuración de esquemas PostgreSQL, reduciendo tiempos de consulta en un 30%.</li>
+                    <li>Reducción del 40% en tiempos de respuesta de incidencias mediante nuevo modelo operativo TIC y metodologías ágiles (Scrum quincenal).</li>
+                </ul>
+            </div>
+
+            <!-- Banco Agrario de Colombia -->
+            <div class="bg-brand-card border border-brand-border rounded-xl p-6 hover:border-emerald-500/40 hover:shadow-[0_0_20px_rgba(16,185,129,0.06)] transition duration-300">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Practicante de Arquitectura TIC</h3>
+                        <p class="text-emerald-400 text-sm font-medium">Banco Agrario de Colombia · Bogotá, Colombia</p>
+                    </div>
+                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-slate-900 text-slate-300 border border-slate-800 self-start sm:self-auto">
+                        May 2024 — Nov 2024
+                    </span>
+                </div>
+                <ul class="space-y-2 text-sm text-slate-300 list-disc list-inside">
+                    <li>Incremento del 15% en la eficiencia de la infraestructura tecnológica de banca virtual evaluando componentes críticos y balanceo de cargas.</li>
+                    <li>Identificación de 12 oportunidades de mejora en escalabilidad y disponibilidad mediante análisis continuo de métricas de rendimiento y patrones de uso.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <!-- PROYECTOS -->
     <section id="proyectos" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12">
             <div>
                 <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
-                    <span class="text-brand-accent font-mono text-xl">02.</span> Proyectos Backend
+                    <span class="text-brand-accent font-mono text-xl">03.</span> Proyectos Backend
                 </h2>
                 <p class="text-slate-400 text-sm mt-2">APIs desarrolladas con FastAPI, PostgreSQL y documentación interactiva.</p>
             </div>
@@ -159,7 +223,7 @@
     <section id="stack" class="py-16 bg-brand-card/30 border-y border-brand-border">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-2xl sm:text-3xl font-bold text-white mb-8 flex items-center gap-3">
-                <span class="text-brand-accent font-mono text-xl">03.</span> Stack Tecnológico
+                <span class="text-brand-accent font-mono text-xl">04.</span> Stack Tecnológico
             </h2>
             <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-4">
                 <!-- Python -->
@@ -217,23 +281,49 @@
     <!-- CONTACTO -->
     <section id="contacto" class="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4 flex items-center justify-center gap-3">
-            <span class="text-brand-accent font-mono text-xl">04.</span> ¿Conectamos?
+            <span class="text-brand-accent font-mono text-xl">05.</span> ¿Conectamos?
         </h2>
-        <p class="text-slate-400 mb-8 max-w-lg mx-auto">
-            Estoy en búsqueda activa de mi primera posición como desarrollador backend. Si tienes una vacante o quieres revisar mi código, escríbeme.
+        <p class="text-slate-400 mb-8 max-w-lg mx-auto text-sm sm:text-base">
+            Estoy en búsqueda activa de mi siguiente desafío profesional como desarrollador backend. Conversemos sobre cómo puedo aportar valor a tu equipo.
         </p>
-        <div class="flex flex-wrap justify-center gap-4">
-            <a href="mailto:acamicamacho@gmail.com" class="bg-brand-accent hover:bg-brand-accentHover text-slate-950 font-bold px-6 py-3 rounded-lg transition shadow-lg shadow-emerald-500/20">
+        <div class="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
+            <!-- Enviar Correo -->
+            <a href="mailto:acamicamacho@gmail.com" class="bg-brand-accent hover:bg-brand-accentHover text-slate-950 font-bold px-5 py-3 rounded-lg transition shadow-lg shadow-emerald-500/20 inline-flex items-center gap-2 text-sm sm:text-base">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
                 Enviar Correo
             </a>
-            <a href="https://www.linkedin.com/in/andrés-camilo-camacho-labrador-05b034246" target="_blank" class="border border-brand-border hover:bg-brand-card hover:border-emerald-500/50 text-white font-medium px-6 py-3 rounded-lg transition">
+            <!-- Copiar Correo con Toast -->
+            <button onclick="copyEmail()" class="border border-brand-border hover:bg-brand-card hover:border-emerald-500/50 text-slate-200 font-medium px-4 py-3 rounded-lg transition inline-flex items-center gap-2 group cursor-pointer text-sm sm:text-base">
+                <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke-width="2"></rect>
+                    <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke-width="2"></path>
+                </svg>
+                <span id="copy-text">Copiar</span>
+            </button>
+            <!-- WhatsApp Directo -->
+            <a href="https://wa.me/573016539723?text=Hola%20Andr%C3%A9s,%20vi%20tu%20portafolio%20backend%20y%20me%20gustar%C3%ADa%20conversar" target="_blank" class="border border-emerald-500/40 hover:bg-emerald-500/10 text-emerald-400 font-medium px-5 py-3 rounded-lg transition inline-flex items-center gap-2 shadow-lg shadow-emerald-500/10 text-sm sm:text-base">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.586 1.771.899 2.796.9 3.181 0 5.767-2.587 5.768-5.766.001-3.182-2.585-5.787-5.768-5.787zm3.387 8.214c-.144.405-.837.774-1.17.824-.312.045-.634.044-.99-.076-.238-.082-.544-.199-.957-.378-1.761-.762-2.906-2.536-2.994-2.653-.088-.117-.714-.951-.714-1.815 0-.864.453-1.289.614-1.464.162-.175.353-.219.47-.219.118 0 .235.001.338.006.109.005.255-.041.399.305.15.359.508 1.242.552 1.333.044.091.073.197.015.313-.059.117-.088.19-.176.293-.088.102-.185.228-.264.307-.088.088-.18.185-.077.361.103.175.459.757.985 1.226.678.605 1.249.792 1.425.88.176.088.279.073.382-.044.103-.117.44-.513.558-.688.117-.175.235-.146.396-.088.162.059 1.026.484 1.202.572.176.088.293.132.338.205.044.074.044.428-.1.833z"></path>
+                </svg>
+                WhatsApp
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/andrés-camilo-camacho-labrador-05b034246" target="_blank" class="border border-brand-border hover:bg-brand-card hover:border-emerald-500/50 text-white font-medium px-5 py-3 rounded-lg transition inline-flex items-center gap-2 text-sm sm:text-base">
                 LinkedIn
             </a>
-            <a href="https://github.com/acamilox" target="_blank" class="border border-brand-border hover:bg-brand-card hover:border-emerald-500/50 text-white font-medium px-6 py-3 rounded-lg transition">
+            <!-- GitHub -->
+            <a href="https://github.com/acamilox" target="_blank" class="border border-brand-border hover:bg-brand-card hover:border-emerald-500/50 text-white font-medium px-5 py-3 rounded-lg transition inline-flex items-center gap-2 text-sm sm:text-base">
                 GitHub
             </a>
         </div>
     </section>
+
+    <!-- TOAST NOTIFICACIÓN -->
+    <div id="toast" class="fixed bottom-6 right-6 transform translate-y-24 opacity-0 bg-emerald-500 text-slate-950 font-bold px-4 py-2.5 rounded-lg shadow-2xl text-sm transition-all duration-300 pointer-events-none z-50 flex items-center gap-2">
+        <span>✔</span> Correo copiado: acamicamacho@gmail.com
+    </div>
 
     <!-- FOOTER -->
     <footer class="py-8 border-t border-brand-border text-center text-xs text-slate-500 font-mono">
@@ -293,6 +383,23 @@
                 grid.innerHTML = `<p class="text-red-400 text-sm col-span-full">Error al cargar la lista de proyectos.</p>`;
             }
         });
+
+        function copyEmail() {
+            navigator.clipboard.writeText("acamicamacho@gmail.com").then(() => {
+                const toast = document.getElementById("toast");
+                toast.classList.remove("translate-y-24", "opacity-0");
+                toast.classList.add("translate-y-0", "opacity-100");
+                const copyText = document.getElementById("copy-text");
+                if (copyText) copyText.innerText = "¡Copiado!";
+                setTimeout(() => {
+                    toast.classList.remove("translate-y-0", "opacity-100");
+                    toast.classList.add("translate-y-24", "opacity-0");
+                    if (copyText) copyText.innerText = "Copiar";
+                }, 2500);
+            }).catch(err => {
+                console.error("No se pudo copiar el correo:", err);
+            });
+        }
     </script>
 </body>
 </html>
