@@ -28,9 +28,10 @@ El monorepositorio está estructurado siguiendo principios de desacoplamiento en
 ├── .github/workflows/
 │   └── deploy.yml              # Pipeline de CI/CD para despliegue automatizado a GitHub Pages
 ├── landing/                    # Interfaz estática de presentación (Tailwind CSS sin dependencias pesadas)
-│   ├── assets/                 # Recursos multimedia y currículum en PDF
+│   ├── assets/                 # Recursos multimedia, currículum y certificados en PDF
 │   ├── index.html              # Interfaz SPA minimalista orientada a reclutadores técnicos
-│   └── projects.json           # Contrato de datos ligero para renderizado dinámico de proyectos
+│   ├── projects.json           # Contrato de datos ligero para renderizado dinámico de proyectos
+│   └── formacion.json          # Contrato de datos para los certificados de formación
 ├── proyectos/                  # Código fuente de microservicios backend independientes
 │   └── plantilla-proyecto/     # Arquitectura base estandarizada (FastAPI + SQLAlchemy + psycopg2)
 └── README.md                   # Descripción general del repositorio
@@ -48,6 +49,15 @@ npm run build
 ```
 
 El CSS generado se guarda en `landing/assets/css/styles.css`. La automatización de GitHub Actions ejecuta este mismo proceso antes de publicar el sitio.
+
+### Contratos de datos
+
+| Archivo | Campo | Descripción |
+|---|---|---|
+| `landing/projects.json` | `id`, `title`, `description`, `tags`, `status`, `repoUrl` | Proyectos backend renderizados en tarjetas individuales |
+| `landing/formacion.json` | `id`, `title`, `provider`, `date`, `description`, `skills`, `certificateUrl` | Cursos culminados; `certificateUrl` apunta al PDF en `assets/certificados/` |
+
+`provider` y `date` son opcionales: si faltan, la tarjeta se muestra sin esa etiqueta. Un curso sin `certificateUrl` recibe el aviso «Certificado no disponible» en lugar del botón.
 
 ---
 

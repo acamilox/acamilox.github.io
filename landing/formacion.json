@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sql-server",
+    "title": "Máster en SQL Server: Desde Cero a Profesional",
+    "provider": "Udemy",
+    "date": "2026-10-19",
+    "description": "Diseño, consultas y administración de bases de datos SQL Server.",
+    "skills": ["SQL Server", "Bases de datos", "T-SQL"],
+    "certificateUrl": "./assets/certificados/sql-server.pdf"
+  },
+  {
+    "id": "opencode",
+    "title": "OpenCode",
+    "provider": null,
+    "date": "2026-10-09",
+    "description": "Uso de agentes de codificación en terminal para automatizar tareas de desarrollo.",
+    "skills": ["OpenCode", "Agentes de IA", "CLI"],
+    "certificateUrl": "./assets/certificados/opencode.pdf"
+  },
+  {
+    "id": "git-github",
+    "title": "GIT+GitHub: Todo un sistema de control de versiones de cero",
+    "provider": "Udemy",
+    "date": "2026-09-21",
+    "description": "Flujos de trabajo colaborativos, branching y gestión de código fuente.",
+    "skills": ["Git", "GitHub", "Control de versiones"],
+    "certificateUrl": "./assets/certificados/git-github.pdf"
+  },
+  {
+    "id": "google-ai-essentials",
+    "title": "Google AI Essentials",
+    "provider": "Coursera",
+    "date": "2026-07-30",
+    "description": "Fundamentos de IA generativa y aplicación práctica de herramientas de IA para la productividad.",
+    "skills": ["IA generativa", "Prompting", "Productividad"],
+    "certificateUrl": "./assets/certificados/google-ai-essentials.pdf"
+  },
+  {
+    "id": "visual-studio-code",
+    "title": "Visual Studio Code",
+    "provider": null,
+    "date": "2026-04-22",
+    "description": "Configuración del entorno de desarrollo y productividad con Visual Studio Code.",
+    "skills": ["VS Code", "Entorno de desarrollo", "Productividad"],
+    "certificateUrl": "./assets/certificados/visual-studio-code.pdf"
+  },
+  {
+    "id": "openclaw",
+    "title": "OpenClaw",
+    "provider": "Udemy",
+    "date": null,
+    "description": "Creación y orquestación de agentes de IA autónomos.",
+    "skills": ["OpenClaw", "Agentes de IA", "Automatización"],
+    "certificateUrl": "./assets/certificados/openclaw.pdf"
+  },
+  {
+    "id": "azure-fundamentals-az-900",
+    "title": "Microsoft Azure Fundamentals (AZ-900)",
+    "provider": "Udemy",
+    "date": null,
+    "description": "Servicios en la nube, seguridad, redes virtuales, almacenamiento y gobernanza en Azure.",
+    "skills": ["Azure", "Cloud", "Gobernanza"],
+    "certificateUrl": "./assets/certificados/azure-fundamentals-az-900.pdf"
+  },
+  {
+    "id": "programacion-para-principiantes",
+    "title": "Programación Para Principiantes",
+    "provider": "Udemy",
+    "date": null,
+    "description": "Fundamentos de programación y lógica aplicada desde cero.",
+    "skills": ["Fundamentos", "Lógica", "Programación"],
+    "certificateUrl": "./assets/certificados/programacion-para-principiantes.pdf"
+  }
+]

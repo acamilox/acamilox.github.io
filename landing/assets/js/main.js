@@ -51,6 +51,61 @@ function renderProject(project) {
   `;
 }
 
+function formatDate(value) {
+  if (!value) return "";
+  const date = new Date(`${value}T00:00:00`);
+  if (Number.isNaN(date.getTime())) return "";
+  return new Intl.DateTimeFormat("es-CO", { day: "2-digit", month: "short", year: "numeric" }).format(date);
+}
+
+function renderCourse(course) {
+  const skills = Array.isArray(course.skills) ? course.skills : [];
+  const provider = course.provider
+    ? `<span class="px-2.5 py-0.5 rounded text-xs font-mono font-medium bg-emerald-950/80 text-emerald-400 border border-emerald-800">${escapeHtml(course.provider)}</span>`
+    : "";
+  const date = course.date
+    ? `<time datetime="${escapeHtml(course.date)}" class="text-xs text-slate-500 font-mono">${escapeHtml(formatDate(course.date))}</time>`
+    : "";
+  const certificateButton = course.certificateUrl
+    ? `<a href="${escapeHtml(course.certificateUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado de ${escapeHtml(course.title)} en PDF" class="text-xs font-semibold px-3 py-2 rounded bg-slate-900 hover:bg-slate-800 text-white transition text-center flex-1 border border-brand-border hover:border-emerald-500/40">Abrir certificado ↗</a>`
+    : `<span class="text-xs font-medium px-3 py-2 rounded bg-slate-900/40 border border-slate-800/80 text-slate-500 cursor-not-allowed select-none text-center flex-1">Certificado no disponible</span>`;
+
+  return `
+    <article class="bg-brand-card border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:border-emerald-500/50 hover:shadow-[0_0_20px_rgba(16,185,129,0.07)] transition-all duration-300">
+      <div>
+        <div class="flex items-center justify-between gap-2 mb-4 min-h-[1.5rem]">
+          ${provider}
+          ${date}
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">${escapeHtml(course.title)}</h3>
+        <p class="text-slate-400 text-sm mb-4 leading-relaxed">${escapeHtml(course.description)}</p>
+        <div class="flex flex-wrap gap-1.5 mb-6">
+          ${skills.map((skill) => `<span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-950 text-slate-300 border border-slate-800">${escapeHtml(skill)}</span>`).join("")}
+        </div>
+      </div>
+      <div class="flex gap-2 pt-4 border-t border-brand-border/60">
+        ${certificateButton}
+      </div>
+    </article>
+  `;
+}
+
+async function loadCourses() {
+  const grid = document.getElementById("courses-grid");
+  if (!grid) return;
+
+  try {
+    const response = await fetch("./formacion.json");
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    const courses = await response.json();
+    grid.innerHTML = courses.map(renderCourse).join("");
+  } catch (error) {
+    console.error("Error al cargar formacion.json:", error);
+    grid.innerHTML = '<p class="text-red-400 text-sm col-span-full">No fue posible cargar la lista de certificados.</p>';
+  }
+}
+
 async function loadProjects() {
   const grid = document.getElementById("projects-grid");
   if (!grid) return;
@@ -113,6 +168,7 @@ function setupCopyEmail() {
 
 document.addEventListener("DOMContentLoaded", () => {
   loadProjects();
+  loadCourses();
   setupMobileMenu();
   setupCopyEmail();
 });

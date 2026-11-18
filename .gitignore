@@ -17,3 +17,7 @@ ENV/
 # IDEs
 .vscode/
 .idea/
+
+# Dependencias y CSS generado
+node_modules/
+landing/assets/css/styles.css
